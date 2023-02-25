@@ -1,5 +1,6 @@
 import supabase from '../config/SupabaseClient';
 import Head from 'next/head';
+import SignUp from './SignUp';
 
 export default function Home() {
   console.log(supabase)
@@ -9,8 +10,7 @@ export default function Home() {
       <Head>
         <title>Luta</title>
       </Head>
-
-      <h1>Luta, social media platform for Nigeria students.</h1>
+      <SignUp />
     </div>
   )
 }
