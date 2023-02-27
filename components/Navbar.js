@@ -19,10 +19,10 @@ const Navbar = () => {
 
     const SignButton = {
         backgroundColor: '#1affd5',
+        color: '#00072d',
         border: '1px solid #00072D',
         borderRadius: '10px',
         fontSize: '14px',
-        color: '#fff',
         padding: '7px 20px'
     }
 
@@ -45,7 +45,6 @@ const Navbar = () => {
             alt="luta logo"
             width="100"
             height="40"
-            priorty
             />
         </Box>
 

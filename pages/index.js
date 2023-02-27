@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import { Box } from '@chakra-ui/react'
-import Navbar from '@/components/Navbar'
+import Head from 'next/head';
+import { Box } from '@chakra-ui/react';
+import Navbar from '@/components/Navbar';
+import SectionA from '@/components/SectionA';
 
 export default function Home() {
   return (
@@ -14,10 +15,12 @@ export default function Home() {
       
       <Box style={{
         backgroundColor: '#00072D',
-        padding: '20px 30px'
+        padding: '20px 30px 0 30px'
       }}>
         {/* Navbar */}
         <Navbar />
+        {/* First Section */}
+        <SectionA />
       </Box>
     </>
   )
