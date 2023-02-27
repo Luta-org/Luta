@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Box } from '@chakra-ui/react';
 import Navbar from '@/components/Navbar';
 import SectionA from '@/components/SectionA';
+import About from '@/components/About';
 
 export default function Home() {
   return (
@@ -13,14 +14,19 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       
-      <Box style={{
+      <Box>
+        <Box style={{
         backgroundColor: '#00072D',
         padding: '20px 30px 0 30px'
       }}>
-        {/* Navbar */}
-        <Navbar />
-        {/* First Section */}
-        <SectionA />
+          {/* Navbar */}
+          <Navbar />
+          {/* First Section */}
+          <SectionA />
+        </Box>
+        
+        {/* About */}
+        <About />
       </Box>
     </>
   )
