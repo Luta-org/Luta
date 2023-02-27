@@ -12,7 +12,10 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       
-      <Box>
+      <Box style={{
+        backgroundColor: '#00072D',
+        padding: '20px 30px'
+      }}>
         {/* Navbar */}
         <Navbar />
       </Box>
