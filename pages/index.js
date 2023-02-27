@@ -1,16 +1,33 @@
-import supabase from '../config/SupabaseClient';
 import Head from 'next/head';
-import SignUp from './SignUp';
+import { Box } from '@chakra-ui/react';
+import Navbar from '@/components/Navbar';
+import SectionA from '@/components/SectionA';
+import About from '@/components/About';
 
 export default function Home() {
-  console.log(supabase)
-
   return (
-    <div>
+    <>
       <Head>
         <title>Luta</title>
+        <meta name="description" content="Social Platform for Students" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="" />
       </Head>
-      <SignUp />
-    </div>
+      
+      <Box>
+        <Box style={{
+        backgroundColor: '#00072D',
+        padding: '20px 30px 0 30px'
+      }}>
+          {/* Navbar */}
+          <Navbar />
+          {/* First Section */}
+          <SectionA />
+        </Box>
+        
+        {/* About */}
+        <About />
+      </Box>
+    </>
   )
 }
