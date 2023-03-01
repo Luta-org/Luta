@@ -4,6 +4,9 @@ import Navbar from '@/components/Navbar';
 import SectionA from '@/components/SectionA';
 import About from '@/components/About';
 import SectionB from '@/components/SectionB';
+import SectionC from '@/components/SectionC';
+import SectionD from '@/components/SectionD';
+import Features from '@/components/Features';
 
 export default function Home() {
   return (
@@ -29,11 +32,23 @@ export default function Home() {
         <Box py={'1rem'} style={{
           backgroundColor: '#fff',
           color: '#00072D',
+          margin: '0 2rem'
         }}>
           {/* About */}
           <About />
+
+          {/* First Section After tthe about component */}
           <SectionB />
+
+          {/* Second section */}
+          <SectionC />
+
+          {/* Third section */}
+          <SectionD />
         </Box>
+
+        {/* Features Section */}
+        <Features />
         
       </Box>
     </>

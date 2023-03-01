@@ -1,14 +1,18 @@
 import {
     Box,
-    Flex
+    Flex,
+    Center,
+    Text
 } from '@chakra-ui/react';
 import Image from 'next/image';
+import styles from '../styles/Section.module.css';
 
 const SectionB = () => {
   return (
-    <Flex style={{
-        width: '100%',
-        backgroundImage: '/Rectangle 1170.svg'
+    <Flex className={styles.sectionb} sx={{
+        my: '1rem',
+        alignItems: 'center',
+        justifyContent: 'space-evenly'
     }}>
         <Box>
             <Image
@@ -24,6 +28,15 @@ const SectionB = () => {
                 }}
             />
         </Box>
+        
+        <Center>
+            <Text sx={{
+                color: '#fff',
+                fontSize: '1.3rem',
+                w: '25rem'
+            }}>Relieve the stress of academics with bants on Luta</Text>
+        </Center>
+
     </Flex>
   )
 }
