@@ -3,6 +3,7 @@ import { Box } from '@chakra-ui/react';
 import Navbar from '@/components/Navbar';
 import SectionA from '@/components/SectionA';
 import About from '@/components/About';
+import SectionB from '@/components/SectionB';
 
 export default function Home() {
   return (
@@ -15,18 +16,25 @@ export default function Home() {
       </Head>
       
       <Box>
-        <Box style={{
-        backgroundColor: '#00072D',
-        padding: '20px 30px 0 30px'
-      }}>
-          {/* Navbar */}
-          <Navbar />
-          {/* First Section */}
-          <SectionA />
+          <Box style={{
+          backgroundColor: '#00072D',
+          padding: '20px 30px 0 30px'
+        }}>
+            {/* Navbar */}
+            <Navbar />
+            {/* First Section */}
+            <SectionA />
+          </Box>
+        
+        <Box py={'1rem'} style={{
+          backgroundColor: '#fff',
+          color: '#00072D',
+        }}>
+          {/* About */}
+          <About />
+          <SectionB />
         </Box>
         
-        {/* About */}
-        <About />
       </Box>
     </>
   )

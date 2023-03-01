@@ -13,7 +13,7 @@ const About = () => {
         alignItems: 'center',
         flexDir: 'column',
         textAlign: 'center',
-        my: '1.5rem'
+        my: '.5rem'
     }}>
         <Heading>About Luta</Heading>
         <Text sx={{
