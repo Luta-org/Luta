@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react';
 
 import { IoMdLock } from 'react-icons/io';
-import { IoIosArrowForward } from 'react-icons/io';
+import { HiOutlineChatAlt2 } from 'react-icons/hi'
 
 const Features = () => {
   return (
@@ -108,7 +108,7 @@ const Features = () => {
                         borderRadius:'100%',
                         transform: 'translateY(-80%)'
                     }}>
-                    <Text><IoMdLock /></Text>
+                    <Text><HiOutlineChatAlt2 /></Text>
                 </Box>
 
                 <Heading sx={{

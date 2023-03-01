@@ -7,6 +7,8 @@ import SectionB from '@/components/SectionB';
 import SectionC from '@/components/SectionC';
 import SectionD from '@/components/SectionD';
 import Features from '@/components/Features';
+import Artilce from '@/components/Artilce';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -49,7 +51,12 @@ export default function Home() {
 
         {/* Features Section */}
         <Features />
-        
+
+        {/* Article */}
+        {/* <Artilce /> */}
+
+        {/* Footer */}
+        <Footer />
       </Box>
     </>
   )

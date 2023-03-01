@@ -18,8 +18,8 @@ const SectionA = () => {
     padding: '7px 20px',
     width: '120px',
     cursor: 'pointer'
-  
   }
+  
   return (
     <Flex style={{
       color: '#fff',
