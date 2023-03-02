@@ -1,0 +1,20 @@
+.sectionb {
+    background-image: url(../public/images/Rectangle\ 1170.svg);
+    background-repeat: no-repeat;
+
+}
+
+.sectionc {
+    background-image: url(../public/images/Rectangle\ 1170\(1\).svg);
+    background-repeat: no-repeat;
+}
+
+/* .scroll::before {
+    content: '';
+    height: 10rem;
+    width: 10rem;
+    background-color: red;
+    border-radius: 100%;
+    padding: 1.2rem 2rem;
+    transform: translateX(-100%);
+} */

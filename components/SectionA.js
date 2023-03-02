@@ -18,8 +18,8 @@ const SectionA = () => {
     padding: '7px 20px',
     width: '120px',
     cursor: 'pointer'
-  
   }
+  
   return (
     <Flex style={{
       color: '#fff',
@@ -36,7 +36,7 @@ const SectionA = () => {
 
       <Box flex={2}>
         <Image 
-            src="/zachary-nelson-98Elr-LIvD8-unsplash-removebg-preview 2.svg"
+            src="/images/zachary-nelson-98Elr-LIvD8-unsplash-removebg-preview 2.svg"
             alt="luta logo"
             width="100"
             height="40"
