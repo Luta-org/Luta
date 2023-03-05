@@ -3,22 +3,12 @@ import {
   Stack,
   Heading,
   Text,
-  Button,
   Flex
 } from '@chakra-ui/react';
 import Image from 'next/image';
+import Buttons from './Buttons/Button';
 
 const SectionA = () => {
-  const buttonStyle = {
-    backgroundColor: '#1affd5',
-    color: '#00072d',
-    border: '1px solid #00072D',
-    borderRadius: '15px',
-    fontSize: '14px',
-    padding: '7px 20px',
-    width: '120px',
-    cursor: 'pointer'
-  }
   
   return (
     <Flex style={{
@@ -31,7 +21,11 @@ const SectionA = () => {
           fontSize: '35px'
         }}>Connect across the world</Heading>
         <Text>Connect with fellow students across higher institutions in Nigeria without any hurdles.</Text>
-        <Button style={buttonStyle}>Get Started</Button>
+        <Buttons
+          text={'Get Started'}  
+          bgColor={'#1affd5'}
+          color={'#00072d'}
+        />
       </Stack>
 
       <Box flex={2}>

@@ -2,30 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { 
     Box,
-    Button,
     ButtonGroup,
     Stack
 } from "@chakra-ui/react";
+import Button from "./Buttons/NavButtons"
 
 const Navbar = () => {
-    const loginButton = {
-        backgroundColor: 'transparent',
-        border: '1px solid #1affd5',
-        borderRadius: '10px',
-        fontSize: '16px',
-        color: '#fff',
-        padding: '7px 20px'
-    }
-
-    const SignButton = {
-        backgroundColor: '#1affd5',
-        color: '#00072d',
-        border: '1px solid #00072D',
-        borderRadius: '10px',
-        fontSize: '14px',
-        padding: '7px 20px'
-    }
-
     const linkStyle = {
         color: '#fff',
         fontSize: '16px',
@@ -53,7 +35,7 @@ const Navbar = () => {
             <Link style={linkStyle} href={'#'}>
                 Home
             </Link>
-            <Link style={linkStyle} href={'#'}>
+            <Link style={linkStyle} href={'/about'}>
                 About
             </Link>
             <Link style={linkStyle} href={'#'}>
@@ -70,12 +52,18 @@ const Navbar = () => {
         {/* Buttons */}
         <ButtonGroup gap={'4'} >
             <Button
-                cursor={'pointer'}
-                variant={'outline'}
-                style={loginButton}> Log in </Button>
+                text={'Log in'}
+                bgColor={'transparent'}
+                textColor={'#fff'}
+                borderStyle={'1px solid #fff'}
+            />
+
             <Button
-                cursor={'pointer'}
-                style={SignButton}> Sign in </Button>
+                text={'Sign up'}
+                bgColor={'#1affd5'}
+                textColor={'#00072d'}
+                borderStyle={'1px solid #00072D'} 
+            />
         </ButtonGroup>
     </Box>
   )

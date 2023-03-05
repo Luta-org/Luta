@@ -18,3 +18,10 @@
     padding: 1.2rem 2rem;
     transform: translateX(-100%);
 } */
+
+.aboutframe {
+    background-image: url(../public//images//Rectangle\ 1168.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
