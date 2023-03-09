@@ -73,9 +73,11 @@ const Navbar = () => {
                 cursor={'pointer'}
                 variant={'outline'}
                 style={loginButton}> Log in </Button>
-            <Button
+                <Link style={linkStyle} href="/signup">
+                  <Button
                 cursor={'pointer'}
-                style={SignButton}> Sign in </Button>
+                style={SignButton}> Sign in </Button></Link>
+          
         </ButtonGroup>
     </Box>
   )
