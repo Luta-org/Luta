@@ -10,7 +10,7 @@ import Button from "./Buttons/NavButtons"
 const Navbar = () => {
     const linkStyle = {
         color: '#fff',
-        fontSize: '16px',
+        fontSize: '1.2rem',
         textDecoration: 'none'
     }
 

@@ -32,7 +32,7 @@ const SectionD = () => {
         <Center>
             <Text sx={{
                 color: '#fff',
-                fontSize: '1.3rem',
+                fontSize: '1.5rem',
                 w: '25rem'
             }}>Get into chat rooms of any topic you’re interested in.</Text>
         </Center>

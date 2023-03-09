@@ -13,12 +13,15 @@ const About = () => {
         alignItems: 'center',
         flexDir: 'column',
         textAlign: 'center',
-        my: '1rem'
+        my: '1.5rem'
     }}>
-        <Heading>About Luta</Heading>
+        <Heading sx={{
+          fontSize: '2.5rem'
+        }}>About Luta</Heading>
         <Text sx={{
-            lineHeight: 1.5,
-            maxW: '35rem'
+            lineHeight: 1.2,
+            maxW: '35rem',
+            fontSize: '1.2rem'
         }}>Luta is a social media platform that connects Nigerian students. It doesn’t matter what you find interesting, there is always a spot in Luta that brings the fun part of you out.</Text>
     </Center>
   )

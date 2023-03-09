@@ -17,7 +17,7 @@ const SectionC = () => {
         <Center>
             <Text sx={{
                 color: '#fff',
-                fontSize: '1.3rem',
+                fontSize: '1.5rem',
                 w: '25rem'
             }}>Luta cares about your privacy. Connect across schools without using your phone number.</Text>
         </Center>

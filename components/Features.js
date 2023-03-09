@@ -34,7 +34,7 @@ const Features = () => {
                 backgroundColor: '#fff',
                 padding: '1rem 1.5rem',
                 borderRadius: '5px',
-                boxShadow: '5px 5px #00072D',
+                boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
                         height: '2.5rem',
@@ -65,7 +65,7 @@ const Features = () => {
                 backgroundColor: '#fff',
                 padding: '1rem 1.5rem',
                 borderRadius: '5px',
-                boxShadow: '5px 5px #00072D',
+                boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
                         height: '2.5rem',
@@ -96,7 +96,7 @@ const Features = () => {
                 backgroundColor: '#fff',
                 padding: '1rem 1.5rem',
                 borderRadius: '5px',
-                boxShadow: '5px 5px #00072D',
+                boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
                         height: '2.5rem',
@@ -127,7 +127,7 @@ const Features = () => {
                 backgroundColor: '#fff',
                 padding: '1rem 1.5rem',
                 borderRadius: '5px',
-                boxShadow: '5px 5px #00072D',
+                boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
                         height: '2.5rem',
