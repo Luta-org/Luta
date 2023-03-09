@@ -26,12 +26,10 @@ const Footer = () => {
   return (
     <Box sx={{
         backgroundColor: '#00072D',
-        p: '2rem 4rem',
+        p: ['1rem 2rem', '2rem 4rem'],
         color: '#fff'
     }}>
-        <Flex sx={{
-            justifyContent: 'space-between'
-        }}>
+        <Box className='flex justify-between'>
             <Stack direction={'column'} spacing={20}>
                 <Stack direction={'row'} spacing={5}>
                     <Image 
@@ -104,7 +102,7 @@ const Footer = () => {
                     Privacy Policy
                 </Link>
             </Stack>
-        </Flex>
+        </Box>
 
         <Text sx={{
             fontSize: '.7rem',

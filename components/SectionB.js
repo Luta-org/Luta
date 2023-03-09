@@ -32,7 +32,7 @@ const SectionB = () => {
         <Center>
             <Text sx={{
                 color: '#fff',
-                fontSize: '1.3rem',
+                fontSize: '1.5rem',
                 w: '25rem'
             }}>Relieve the stress of academics with bants on Luta</Text>
         </Center>

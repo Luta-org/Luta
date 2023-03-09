@@ -17,24 +17,24 @@ const Features = () => {
         textAlign: 'center'
     }}>
         {/* Heading */}
-        <Heading>Features</Heading>
+        <Heading className='text-2xl font-bold'>Features</Heading>
 
         {/* Sub Heading */}
-        <Text sx={{
+    <Text className='text-center text-lg' sx={{
             mb: '1.5rem'
         }}>Explore the numerous features Luta have to offer.</Text>
 
         {/* Boxes */}
-        <Stack direction={'row'} spacing={50} >
+        <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center align-center' >
             <Flex style={{
-                width: '20rem',
+                width: '17rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#fff',
                 padding: '1rem 1.5rem',
                 borderRadius: '5px',
-                boxShadow: '5px 5px #00072D',
+                boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
                         height: '2.5rem',
@@ -58,14 +58,14 @@ const Features = () => {
             </Flex>
 
             <Flex style={{
-                width: '20rem',
+                width: '17rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#fff',
                 padding: '1rem 1.5rem',
                 borderRadius: '5px',
-                boxShadow: '5px 5px #00072D',
+                boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
                         height: '2.5rem',
@@ -89,14 +89,14 @@ const Features = () => {
             </Flex>
 
             <Flex style={{
-                width: '20rem',
+                width: '17rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#fff',
                 padding: '1rem 1.5rem',
                 borderRadius: '5px',
-                boxShadow: '5px 5px #00072D',
+                boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
                         height: '2.5rem',
@@ -120,14 +120,14 @@ const Features = () => {
             </Flex>
 
             <Flex style={{
-                width: '20rem',
+                width: '17rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#fff',
                 padding: '1rem 1.5rem',
                 borderRadius: '5px',
-                boxShadow: '5px 5px #00072D',
+                boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
                         height: '2.5rem',
@@ -149,7 +149,7 @@ const Features = () => {
                     fontSize: '.8rem'
                 }}>Whether you are on the mobile phone or laptop, enjoy Luta as you want.</Text>
             </Flex>
-        </Stack>
+        </div>
 
         {/* Link */}
         <Flex sx={{

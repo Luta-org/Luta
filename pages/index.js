@@ -22,11 +22,11 @@ export default function Home() {
       
       <Box>
           <Box style={{
+          height: '90vh',  
           backgroundColor: '#00072D',
           padding: '20px 30px 0 30px'
         }}>
             {/* Navbar */}
-            <Navbar />
             {/* First Section */}
             <SectionA />
           </Box>
