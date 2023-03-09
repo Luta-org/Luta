@@ -3,46 +3,50 @@ import {
   Stack,
   Heading,
   Text,
-  Button,
   Flex
 } from '@chakra-ui/react';
 import Image from 'next/image';
+import Buttons from './Buttons/Button';
 
 const SectionA = () => {
-  const buttonStyle = {
-    backgroundColor: '#1affd5',
-    color: '#00072d',
-    border: '1px solid #00072D',
-    borderRadius: '15px',
-    fontSize: '14px',
-    padding: '7px 20px',
-    width: '120px',
-    cursor: 'pointer'
   
-  }
   return (
     <Flex style={{
+      height: '90vh',
       color: '#fff',
     }}>
       <Stack direction={'column'} spacing={4} style={{
+        width: '50vw',
         alignSelf: 'center'
       }} >
         <Heading sx={{
-          fontSize: '35px'
+          fontSize: '4.5rem',
+          lineHeight: '.9em'
         }}>Connect across the world</Heading>
-        <Text>Connect with fellow students across higher institutions in Nigeria without any hurdles.</Text>
-        <Button style={buttonStyle}>Get Started</Button>
+        <Text sx={{
+          w: '35vw',
+          fontSize: '1.2rem',
+          lineHeight: '1.3em',
+          py: '1.5rem'
+        }}>Connect with fellow students across higher institutions in Nigeria without any hurdles.</Text>
+        <Buttons
+          text={'Get Started'}  
+          bgColor={'#1affd5'}
+          color={'#00072d'}
+        />
       </Stack>
 
-      <Box flex={2}>
+      <Box sx={{
+        w: '50vh'
+      }}>
         <Image 
-            src="/zachary-nelson-98Elr-LIvD8-unsplash-removebg-preview 2.svg"
+            src="/images/zachary-nelson-98Elr-LIvD8-unsplash-removebg-preview 2.svg"
             alt="luta logo"
             width="100"
             height="40"
             style={{
               height: '100%',
-              width: '80%'
+              width: '100%'
             }}
           />
       </Box>
