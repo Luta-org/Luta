@@ -23,10 +23,10 @@ const Navbar = () => {
         {/* Logo */}
         <Box>
             <Image 
-            src="/Vector.svg"
-            alt="luta logo"
-            width="100"
-            height="40"
+                src="/Vector.svg"
+                alt="luta logo"
+                width="50"
+                height="40"
             />
         </Box>
 

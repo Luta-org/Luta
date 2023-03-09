@@ -17,17 +17,17 @@ const Features = () => {
         textAlign: 'center'
     }}>
         {/* Heading */}
-        <Heading>Features</Heading>
+        <Heading className='text-2xl font-bold'>Features</Heading>
 
         {/* Sub Heading */}
-        <Text sx={{
+    <Text className='text-center text-lg' sx={{
             mb: '1.5rem'
         }}>Explore the numerous features Luta have to offer.</Text>
 
         {/* Boxes */}
-        <Stack direction={'row'} spacing={50} >
+        <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center align-center' >
             <Flex style={{
-                width: '20rem',
+                width: '17rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -58,7 +58,7 @@ const Features = () => {
             </Flex>
 
             <Flex style={{
-                width: '20rem',
+                width: '17rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -89,7 +89,7 @@ const Features = () => {
             </Flex>
 
             <Flex style={{
-                width: '20rem',
+                width: '17rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -120,7 +120,7 @@ const Features = () => {
             </Flex>
 
             <Flex style={{
-                width: '20rem',
+                width: '17rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -149,7 +149,7 @@ const Features = () => {
                     fontSize: '.8rem'
                 }}>Whether you are on the mobile phone or laptop, enjoy Luta as you want.</Text>
             </Flex>
-        </Stack>
+        </div>
 
         {/* Link */}
         <Flex sx={{

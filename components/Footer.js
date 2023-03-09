@@ -29,11 +29,7 @@ const Footer = () => {
         p: ['1rem 2rem', '2rem 4rem'],
         color: '#fff'
     }}>
-        <Box sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            flexDirection: ['row', null, null,  'row']
-        }}>
+        <Box className='flex justify-between'>
             <Stack direction={'column'} spacing={20}>
                 <Stack direction={'row'} spacing={5}>
                     <Image 

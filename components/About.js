@@ -15,13 +15,10 @@ const About = () => {
         textAlign: 'center',
         my: '1.5rem'
     }}>
-        <Heading sx={{
-          fontSize: '2.5rem'
-        }}>About Luta</Heading>
-        <Text sx={{
+        <Heading className="text-2xl font-bold mb-2">About Luta</Heading>
+        <Text className="text-lg" sx={{
             lineHeight: 1.2,
             maxW: '35rem',
-            fontSize: '1.2rem'
         }}>Luta is a social media platform that connects Nigerian students. It doesn’t matter what you find interesting, there is always a spot in Luta that brings the fun part of you out.</Text>
     </Center>
   )

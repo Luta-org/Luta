@@ -27,7 +27,6 @@ export default function Home() {
           padding: '20px 30px 0 30px'
         }}>
             {/* Navbar */}
-            <Navbar />
             {/* First Section */}
             <SectionA />
           </Box>
