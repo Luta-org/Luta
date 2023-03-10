@@ -16,7 +16,7 @@ const Navbar = ({
     color,
     pad,
     navColor,
-    butColor,
+    textColor,
     borderStyle
 }) => {
     const linkStyle = {
@@ -74,7 +74,12 @@ const Navbar = ({
         </Box>
 
         <Box className='md:hidden text-2xl' style={{ color:color }}>
-            <Text><GiDiceSixFacesFour /></Text>
+            <Image 
+                src={'/images/menu.svg'}
+                alt={"vector"}
+                width='30'
+                height='30'
+            />
         </Box>
     </Box>
   )

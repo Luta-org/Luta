@@ -25,7 +25,7 @@ const Features = () => {
         }}>Explore the numerous features Luta have to offer.</Text>
 
         {/* Boxes */}
-        <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center items-center'>
+        <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 place-items-center'>
             <Flex style={{
                 width: '15rem',
                 flexDirection: 'column',
@@ -33,7 +33,7 @@ const Features = () => {
                 justifyContent: 'center',
                 backgroundColor: '#fff',
                 padding: '1rem',
-                borderRadius: '5px',
+                borderRadius: '16px',
                 boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
@@ -64,7 +64,7 @@ const Features = () => {
                 justifyContent: 'center',
                 backgroundColor: '#fff',
                 padding: '1rem',
-                borderRadius: '5px',
+                borderRadius: '16px',
                 boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
@@ -95,7 +95,7 @@ const Features = () => {
                 justifyContent: 'center',
                 backgroundColor: '#fff',
                 padding: '1rem',
-                borderRadius: '5px',
+                borderRadius: '16px',
                 boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
@@ -126,7 +126,7 @@ const Features = () => {
                 justifyContent: 'center',
                 backgroundColor: '#fff',
                 padding: '1rem',
-                borderRadius: '5px',
+                borderRadius: '16px',
                 boxShadow: '1px 1px 5px #00072D',
             }}>
                 <Box style={{
