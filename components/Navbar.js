@@ -32,7 +32,7 @@ const Navbar = ({
         alignItems: 'center'
     }}>
         {/* Logo */}
-        <Box className='w-1/5'>
+        <Box className='w-1/3'>
             <Image 
                 src="/Vector.svg"
                 alt="luta logo"
@@ -41,7 +41,7 @@ const Navbar = ({
             />
         </Box>
 
-        <Box style={{ color: navColor }} className='w-4/5 hidden md:flex items-center justify-between'>
+        <Box style={{ color: navColor }} className='w-2/3 hidden md:flex items-center justify-between'>
             {/* Links */}
             <Stack className='text-md md:text-[.9rem] lg:text-[1rem]' direction='row' spacing={'30'}>
                 <Link style={linkStyle} href={'#'}>
@@ -73,12 +73,13 @@ const Navbar = ({
             </ButtonGroup>
         </Box>
 
-        <Box className='md:hidden text-2xl' style={{ color:color }}>
+        <Box className='md:hidden text-2xl'>
             <Image 
                 src={'/images/menu.svg'}
                 alt={"vector"}
                 width='30'
                 height='30'
+                style={{ backgroundColor: color }}
             />
         </Box>
     </Box>

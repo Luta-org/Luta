@@ -11,7 +11,7 @@ import Buttons from './Buttons/Button';
 const SectionA = () => {
   
   return (
-    <div className='w-full h:90vh flex sm:justify-center md:justify-between flex-col md:flex-row'>
+    <div className='w-full h:90vh flex sm:justify-center md:justify-between items-center flex-col md:flex-row'>
       <Stack className='text-center md:text-left' direction={'column'} spacing={4}>
         <Heading className='text-2xl text-white md:text-4xl lg:text-5xl font-bold'>Connect across the country.</Heading>
         <Text className='text-xl text-white md:text-2xl' sx={{

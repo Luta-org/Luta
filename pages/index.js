@@ -54,7 +54,7 @@ export default function Home() {
         <Features />
 
         {/* Article */}
-        {/* <Artilce /> */}
+        <Artilce />
 
         {/* Footer */}
         <Footer />

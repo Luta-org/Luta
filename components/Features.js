@@ -2,9 +2,9 @@ import {
     Box,
     Heading,
     Text,
-    Flex,
-    Stack
+    Flex
 } from '@chakra-ui/react';
+import Image from 'next/image';
 
 import { IoMdLock } from 'react-icons/io';
 import { HiOutlineChatAlt2 } from 'react-icons/hi'
@@ -25,7 +25,7 @@ const Features = () => {
         }}>Explore the numerous features Luta have to offer.</Text>
 
         {/* Boxes */}
-        <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 place-items-center'>
+        <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 place-items-center'>
             <Flex style={{
                 width: '15rem',
                 flexDirection: 'column',
@@ -42,11 +42,16 @@ const Features = () => {
                         fontSize: '1.2rem',
                         backgroundColor: '#00072D',
                         color: '#fff',
-                        padding: '.5rem .7rem',
+                        padding: '.5rem',
                         borderRadius:'100%',
                         transform: 'translateY(-80%)'
                     }}>
-                    <Text><IoMdLock /></Text>
+                       <Image 
+                            src={'/images/Frame 736.svg'}
+                            alt={"vector"}
+                            width='50'
+                            height='50'
+                        />
                 </Box>
 
                 <Heading sx={{
@@ -73,11 +78,16 @@ const Features = () => {
                         fontSize: '1.2rem',
                         backgroundColor: '#00072D',
                         color: '#fff',
-                        padding: '.5rem .7rem',
+                        padding: '.5rem',
                         borderRadius:'100%',
                         transform: 'translateY(-80%)'
                     }}>
-                    <Text><IoMdLock /></Text>
+                        <Image 
+                            src={'/images/Frame 736 (1).svg'}
+                            alt={"vector"}
+                            width='50'
+                            height='50'
+                        />
                 </Box>
 
                 <Heading sx={{
@@ -104,11 +114,16 @@ const Features = () => {
                         fontSize: '1.2rem',
                         backgroundColor: '#00072D',
                         color: '#fff',
-                        padding: '.5rem .7rem',
+                        padding: '.5rem',
                         borderRadius:'100%',
                         transform: 'translateY(-80%)'
                     }}>
-                    <Text><HiOutlineChatAlt2 /></Text>
+                        <Image 
+                            src={'/images/messages.svg'}
+                            alt={"vector"}
+                            width='50'
+                            height='50'
+                        />
                 </Box>
 
                 <Heading sx={{
@@ -135,11 +150,16 @@ const Features = () => {
                         fontSize: '1.2rem',
                         backgroundColor: '#00072D',
                         color: '#fff',
-                        padding: '.5rem .7rem',
+                        padding: '.5rem',
                         borderRadius:'100%',
                         transform: 'translateY(-80%)'
                     }}>
-                    <Text><IoMdLock /></Text>
+                        <Image 
+                            src={'/images/Vector (1).svg'}
+                            alt={"vector"}
+                            width='50'
+                            height='50'
+                        />
                 </Box>
 
                 <Heading sx={{

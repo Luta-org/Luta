@@ -4,31 +4,31 @@ import {
     Text,
     Button
 } from '@chakra-ui/react';
+import Buttons from './Buttons/Button';
+import Image from 'next/image';
 
 const Artilce = () => {
-    const buttonStyle = {
-        backgroundColor: '#1affd5',
-        color: '#00072d',
-        borderRadius: '15px',
-        fontSize: '14px',
-        padding: '7px 20px',
-        width: '120px',
-        cursor: 'pointer',
-        fontWeight: '500'
-      }
 
   return (
-    <Flex sx={{
-        backgroundColor: '#fff',
-        margin: '0 2rem',
-        alignItems: 'center',
-        justifyContent: 'center'
-    }}>
+    <div className='w-full flex justify-center items-center bg-white'>
         <Box>
             <Text>Don’t be left out. Join the rest of the Nigerian students to explore what social life really means.</Text>
-            <Button style={buttonStyle}>Get Started</Button>
+            <Buttons
+                text={'Get started'}
+                bgColor={'#1affd5'}
+                textColor={'#00072d'}
+            />
         </Box>
-    </Flex>
+
+        <Box>
+            <Image 
+                src={'/images/iPhone 12 Pro (Wooden Hands).svg'}
+                alt={"vector"}
+                width='200'
+                height='200'
+            />
+        </Box>
+    </div>
   )
 }
 
