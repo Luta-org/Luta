@@ -25,14 +25,14 @@ const Features = () => {
         }}>Explore the numerous features Luta have to offer.</Text>
 
         {/* Boxes */}
-        <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center align-center' >
+        <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center items-center'>
             <Flex style={{
-                width: '17rem',
+                width: '15rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#fff',
-                padding: '1rem 1.5rem',
+                padding: '1rem',
                 borderRadius: '5px',
                 boxShadow: '1px 1px 5px #00072D',
             }}>
@@ -42,7 +42,7 @@ const Features = () => {
                         fontSize: '1.2rem',
                         backgroundColor: '#00072D',
                         color: '#fff',
-                        padding: '.5rem',
+                        padding: '.5rem .7rem',
                         borderRadius:'100%',
                         transform: 'translateY(-80%)'
                     }}>
@@ -58,12 +58,12 @@ const Features = () => {
             </Flex>
 
             <Flex style={{
-                width: '17rem',
+                width: '15rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#fff',
-                padding: '1rem 1.5rem',
+                padding: '1rem',
                 borderRadius: '5px',
                 boxShadow: '1px 1px 5px #00072D',
             }}>
@@ -73,7 +73,7 @@ const Features = () => {
                         fontSize: '1.2rem',
                         backgroundColor: '#00072D',
                         color: '#fff',
-                        padding: '.5rem',
+                        padding: '.5rem .7rem',
                         borderRadius:'100%',
                         transform: 'translateY(-80%)'
                     }}>
@@ -89,12 +89,12 @@ const Features = () => {
             </Flex>
 
             <Flex style={{
-                width: '17rem',
+                width: '15rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#fff',
-                padding: '1rem 1.5rem',
+                padding: '1rem',
                 borderRadius: '5px',
                 boxShadow: '1px 1px 5px #00072D',
             }}>
@@ -104,7 +104,7 @@ const Features = () => {
                         fontSize: '1.2rem',
                         backgroundColor: '#00072D',
                         color: '#fff',
-                        padding: '.5rem',
+                        padding: '.5rem .7rem',
                         borderRadius:'100%',
                         transform: 'translateY(-80%)'
                     }}>
@@ -120,12 +120,12 @@ const Features = () => {
             </Flex>
 
             <Flex style={{
-                width: '17rem',
+                width: '15rem',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#fff',
-                padding: '1rem 1.5rem',
+                padding: '1rem',
                 borderRadius: '5px',
                 boxShadow: '1px 1px 5px #00072D',
             }}>
@@ -135,7 +135,7 @@ const Features = () => {
                         fontSize: '1.2rem',
                         backgroundColor: '#00072D',
                         color: '#fff',
-                        padding: '.5rem',
+                        padding: '.5rem .7rem',
                         borderRadius:'100%',
                         transform: 'translateY(-80%)'
                     }}>

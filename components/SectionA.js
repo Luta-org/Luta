@@ -11,20 +11,10 @@ import Buttons from './Buttons/Button';
 const SectionA = () => {
   
   return (
-    <Flex style={{
-      height: '90vh',
-      color: '#fff',
-    }}>
-      <Stack direction={'column'} spacing={4} style={{
-        width: '50vw',
-        alignSelf: 'center'
-      }} >
-        <Heading sx={{
-          fontSize: '4.5rem',
-          lineHeight: '.9em'
-        }}>Connect across the world</Heading>
-        <Text sx={{
-          w: '35vw',
+    <div className='w-full h:90vh flex sm:justify-center md:justify-between flex-col md:flex-row'>
+      <Stack className='text-center md:text-left' direction={'column'} spacing={4}>
+        <Heading className='text-2xl text-white md:text-4xl lg:text-5xl font-bold'>Connect across the country.</Heading>
+        <Text className='text-xl text-white md:text-2xl' sx={{
           fontSize: '1.2rem',
           lineHeight: '1.3em',
           py: '1.5rem'
@@ -36,10 +26,10 @@ const SectionA = () => {
         />
       </Stack>
 
-      <Box sx={{
+      <Box className='hidden' sx={{
         w: '50vh'
       }}>
-        <Image 
+        <Image
             src="/images/zachary-nelson-98Elr-LIvD8-unsplash-removebg-preview 2.svg"
             alt="luta logo"
             width="100"
@@ -50,7 +40,7 @@ const SectionA = () => {
             }}
           />
       </Box>
-    </Flex>
+    </div>
   )
 }
 

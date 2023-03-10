@@ -7,13 +7,13 @@ import Buttons from "../Buttons/Button";
 
 const Invite = () => {
   return (
-    <Box>
+    <Box className="h-20vh flex flex-col justify-center items-center">
         <Heading>Come join us and be part of something special.</Heading>
         <Text>See you on the inside</Text>
         <Buttons 
-            text={'Join Us'}  
-            bgColor={'#1affd5'}
-            color={'#00072d'}
+          text={'Join Us'}  
+          bgColor={'#1affd5'}
+          color={'#00072d'}
         />
     </Box>
   )

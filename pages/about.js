@@ -14,7 +14,10 @@ const about = () => {
     <Box sx={{
       bgColor: '#fff'
     }}>
-      {/* <Navbar /> */}
+      <Navbar 
+        color={'#000'}
+        pad={'20px 30px 0 20px'} 
+      />
       <AboutFrame />
       <OurApp />
       <Mission />
