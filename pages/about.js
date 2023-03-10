@@ -17,8 +17,9 @@ const about = () => {
     }}>
       <Navbar
         navColor={'#00072d'} 
-        color={'#000'}
+        color={'transparent'}
         pad={'20px 30px 0 20px'} 
+        borderStyle={'1px solid #1affd5'}
       />
       <AboutFrame />
       <OurApp />

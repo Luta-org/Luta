@@ -19,7 +19,7 @@ const AboutFrame = () => {
         <Box>
             <Heading className="text-2xl md:text-3xl font-bold">About Us</Heading>
         </Box>
-        <Box className="w-[32rem] text-center text-md md:text-xl mx-6">
+        <Box className="w-[22rem] md:w-[32rem] text-center text-md md:text-xl mx-6">
             <Text>Luta is a social networking platform created to help Nigerian students in higher institutions connect across different schools in the country.</Text>
         </Box>
     </Flex>

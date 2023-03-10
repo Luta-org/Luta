@@ -27,7 +27,7 @@ export default function Home() {
           padding: '20px 30px 0 30px'
         }}>
             {/* Navbar */}
-            <Navbar color={'#fff'} navColor={'#fff'} />
+            <Navbar color={'#fff'} navColor={'#fff'} borderStyle={'1px solid #fff'} />
             {/* First Section */}
             <SectionA />
           </Box>

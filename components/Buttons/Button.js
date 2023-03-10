@@ -11,7 +11,7 @@ const Buttons = ({bgColor, textColor, text, borderStyle}) => {
                 width: '150px',
                 height: '40px',
                 borderRadius: '32px',
-                fontSize: '.9rem',
+                fontSize: '1rem',
                 fontWeight: 'bold',
                 p: '9px 20px',
                 cursor: 'pointer'                
