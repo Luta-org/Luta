@@ -12,9 +12,11 @@ import Footer from '@/components/Footer';
 const about = () => {
   return (
     <Box sx={{
+      w: '100vw',
       bgColor: '#fff'
     }}>
-      <Navbar 
+      <Navbar
+        navColor={'#00072d'} 
         color={'#000'}
         pad={'20px 30px 0 20px'} 
       />

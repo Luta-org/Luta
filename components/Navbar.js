@@ -14,10 +14,10 @@ import {
 const Navbar = ({
     bgColor,
     color,
-    pad
+    pad,
+    navColor
 }) => {
     const linkStyle = {
-        color: '#fff',
         textDecoration: 'none'
     }
 
@@ -39,7 +39,7 @@ const Navbar = ({
             />
         </Box>
 
-        <Box className='w-4/5 hidden md:flex items-center justify-between'>
+        <Box style={{ color: navColor }} className='w-4/5 hidden md:flex items-center justify-between'>
             {/* Links */}
             <Stack className='text-md md:text-[.9rem] lg:text-[1rem]' direction='row' spacing={'30'}>
                 <Link style={linkStyle} href={'#'}>
@@ -54,7 +54,7 @@ const Navbar = ({
                 <Link style={linkStyle} href={'#'}>
                     FAQs
                 </Link>
-                <Link style={linkStyle} href={'#'}>
+                <Link style={linkStyle} href={'/contact'}>
                     Contact Us
                 </Link>
             </Stack>

@@ -2,8 +2,7 @@ import {
     Box,
     Stack,
     Heading,
-    Text,
-    Flex
+    Text
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,7 +12,6 @@ import {
     FaLinkedin 
 } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
-import styles from '../styles/Section.module.css';
 
 const Footer = () => {
     const linkStyle = {
@@ -29,7 +27,7 @@ const Footer = () => {
     }}>
         <Box className='w-full flex flex-col md:flex-row justify-between items-center md:items-start'>
             <Stack className='flex flex-col items-center md:items-start' direction={'column'} spacing={12}>
-                <Box className='flex absolute top-[-15px] right-20 md:hidden flex-col justify-center items-center' sx={{
+                <Box className='flex absolute top-[-15px] right-12 md:right-18 md:hidden flex-col justify-center items-center' sx={{
                     height: '3.5rem',
                     width: '3.5rem',
                     textAlign: 'center',
@@ -96,10 +94,10 @@ const Footer = () => {
             <Stack className='text-md my-6 md:my-0 leading-8' direction='column' spacing={'10'} sx={{
                 textAlign: 'center'
             }}>
-                <Link style={linkStyle} href={'#'}>
+                <Link style={linkStyle} href={'/about'}>
                     About Us
                 </Link>
-                <Link style={linkStyle} href={'#'}>
+                <Link style={linkStyle} href={'/contact'}>
                     Contact Us
                 </Link>
                 <Link style={linkStyle} href={'#'}>
