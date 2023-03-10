@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import FrameOne from "@/components/ContactPage/FrameOne";
+import Form from "@/components/AboutPage/Form";
 import FrameTwo from "@/components/ContactPage/FrameTwo";
 import Footer from "@/components/Footer";
 
@@ -15,6 +16,7 @@ const contact = () => {
       />
 
       <FrameOne />
+      <Form />
       <FrameTwo />
       <Footer />
     </div>
