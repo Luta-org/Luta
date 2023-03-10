@@ -15,7 +15,9 @@ const Navbar = ({
     bgColor,
     color,
     pad,
-    navColor
+    navColor,
+    butColor,
+    borderStyle
 }) => {
     const linkStyle = {
         textDecoration: 'none'
@@ -45,17 +47,11 @@ const Navbar = ({
                 <Link style={linkStyle} href={'#'}>
                     Home
                 </Link>
-                <Link style={linkStyle} href={'/about'}>
-                    About
-                </Link>
                 <Link style={linkStyle} href={'#'}>
                     Features
                 </Link>
                 <Link style={linkStyle} href={'#'}>
                     FAQs
-                </Link>
-                <Link style={linkStyle} href={'/contact'}>
-                    Contact Us
                 </Link>
             </Stack>
 
@@ -64,8 +60,8 @@ const Navbar = ({
                 <Button
                     text={'Log in'}
                     bgColor={'transparent'}
-                    textColor={'#fff'}
-                    borderStyle={'1px solid #fff'}
+                    textColor={textColor}
+                    borderStyle={borderStyle}
                 />
 
                 <Button
