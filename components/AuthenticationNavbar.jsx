@@ -1,86 +1,67 @@
+import { Button, ButtonGroup } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { 
-    Box,
-    Button,
-    ButtonGroup,
-    Stack
-} from "@chakra-ui/react";
+import { useState } from 'react';
+import harmbugger from "../public/images/harmbugger.png";
 
 const AuthenticationNavbar = () => {
-    const loginButton = {
-        backgroundColor: 'transparent',
-        border: '1px solid #1affd5',
-        borderRadius: '10px',
-        fontSize: '16px',
-       color: '#00072d',
-        padding: '7px 20px'
-    }
-
-    const SignButton = {
-        backgroundColor: '#1affd5',
-        color: '#00072d',
-        border: '1px solid #00072D',
-        borderRadius: '10px',
-        fontSize: '14px',
-        padding: '7px 20px'
-    }
-
-    const linkStyle = {
-        color: '#000000',
-        fontSize: '16px',
-        textDecoration: 'none'
-    }
-
+    let Links = [
+      { name: "Home", link: "#" },
+      { name: "About", link: "#" },
+      { name: "Features", link: "#" },
+      { name: "Faqs", link: "#" },
+      { name: "Contact Us", link: "#" },
+    ];
+      const [click, setClick] = useState(false);
+      const [activeLink, setActiveLink] = useState("");
+       const handleLinkClick = (link) => {
+         setActiveLink(link);
+       };
+   
   return (
-    <Box style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-    }}>
-        {/* Logo */}
-        <Box>
-            <Image 
-            src="/Vector.svg"
-            alt="luta logo"
-            width="100"
-            height="40"
-            />
-        </Box>
+    <div className="w-full z-[999] sticky bg-white top-0 left-0 px-1 lg:px-2 md:px-0">
+      <div className="md:flex items-center gap-[20px] md:w-full py-4 md:px-4 px-2">
+        <div className="w-36 lg:w-24">
+          <div>
+            <Image src="/Vector.svg" alt="luta logo" width="50" height="40" />
+          </div>
+        </div>
 
-        {/* Links */}
-        <Stack direction='row' spacing={'30'}>
-            <Link style={linkStyle} href={'#'}>
-                Home
-            </Link>
-            <Link style={linkStyle} href={'#'}>
-                About
-            </Link>
-            <Link style={linkStyle} href={'#'}>
-                Features
-            </Link>
-            <Link style={linkStyle} href={'#'}>
-                FAQs
-            </Link>
-            <Link style={linkStyle} href={'#'}>
-                Contact Us
-            </Link>
-        </Stack>
+        <div
+          onClick={() => setClick(!click)}
+          className="text-md absolute right-8 top-6 cursor-pointer md:hidden"
+        >
+          {click ? (
+            <Image src={harmbugger} alt="menu" />
+          ) : (
+            <Image src={harmbugger} alt="menu" />
+          )}
+        </div>
 
-        {/* Buttons */}
-        <ButtonGroup gap={'4'} >
-            <Button
-                cursor={'pointer'}
-                variant={'outline'}
-                style={loginButton}> Log in </Button>
-                <Link style={linkStyle} href="/signin">
-                  <Button
-                cursor={'pointer'}
-                style={SignButton}> Sign in </Button></Link>
-          
-        </ButtonGroup>
-    </Box>
-  )
+        <ul
+          className={`md:flex md:items-center md:z-auto md:w-auto md:pb-0 md:static pb-12 absolute bg-white z-[-1] left-0 w-full pl-3 transition-all duration-300 ease-in ${
+            click ? "top-20 " : "top-[-490px]"
+          }`}
+        >
+          {Links.map((link) => (
+            <li key={link.name} className="md:ml-8 text-[18px] md:my-0 my-7">
+              <a
+                href={link.link}
+                className={`hover:text-gray-800  font-medium text-base duration-300 ${
+                  activeLink === link.name
+                    ? "text-gray-800"
+                    : "text-gray-900 text-opacity-75"
+                }`}
+                onClick={() => handleLinkClick(link.name)}
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 }
 
 export default AuthenticationNavbar

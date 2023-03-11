@@ -8,6 +8,7 @@ import {
 import Button from "./Buttons/NavButtons"
 
 const Navbar = () => {
+    
     const linkStyle = {
         color: '#fff',
         fontSize: '1.2rem',
@@ -57,7 +58,7 @@ const Navbar = () => {
                 textColor={'#fff'}
                 borderStyle={'1px solid #fff'}
             />
-
+  <Link style={linkStyle} href="/signup"></Link>
             <Button
                 text={'Sign up'}
                 bgColor={'#1affd5'}

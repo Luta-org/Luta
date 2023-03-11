@@ -1,136 +1,112 @@
-import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import line from "../public/images/line.png";
 import Image from "next/image";
-import SignInInstead from "@/components/SignInInstead";
 import AuthenticationNavbar from "@/components/AuthenticationNavbar";
+import Profilesuccessful from "@/components/ProfileSuccesful";
 const signuppage4 = () => {
   const linkStyle = {
     textDecoration: "none",
   };
+  const [showAddNewNotePopup, setShowAddNewNotePopup] = useState(false);
+
   return (
     <div>
-      <div>
-        <Box>
-          <AuthenticationNavbar />
-        </Box>
+      <Profilesuccessful isOpen={showAddNewNotePopup} />
+      <Box>
+        <AuthenticationNavbar />
+      </Box>
 
-        <Flex width={"100%"}>
-          <Box width={"50%"}>
-            <Box width={("50%", "90%", "100%")}>
-              <Text
-                textAlign={"center"}
-                fontSize={"48px"}
-                color={"black"}
-                marginTop={"30px"}
-              >
-                Sign Up
-              </Text>
-              <Text textAlign={"center"} marginTop={"5px"} fontSize={"16px"}>
-                Complete your registration
-              </Text>
-              <Flex
-                justifyContent={"center"}
-                alignItems={"center"}
-                direction={"column"}
-              >
-                <Flex marginTop={"20px"} direction={"column"}>
-                  <Text fontSize={"20px"}>Preferred username</Text>
-                  <Input
-                    placeholder={"codeboyfriend"}
-                    px={10}
-                    py={18}
-                    w={["100px", "300px", "500px"]}
-                  />
-                </Flex>
-                <Box>
-                  <Flex alignItems={"center"} gap={"5px"} py={"10px"}>
-                    <Box
-                      w={"8px"}
-                      h={"8px"}
-                      bg={"#00072D"}
-                      borderRadius={"100px"}
-                    ></Box>
-                    <Text fontSize={"15px"}>
-                      Usernames are how other Lutees will see you.
-                    </Text>
-                  </Flex>
-                  <Flex alignItems={"center"} gap={"5px"} py={"10px"}>
-                    <Box
-                      w={"8px"}
-                      h={"8px"}
-                      bg={"#00072D"}
-                      borderRadius={"100px"}
-                    ></Box>
-                    <Text fontSize={"15px"}>
-                      Username must not contain offesive words to any race,
-                      religion or gender.
-                    </Text>
-                  </Flex>
-                  <Flex alignItems={"center"} gap={"5px"} py={"10px"}>
-                    <Box
-                      w={"8px"}
-                      h={"8px"}
-                      bg={"#00072D"}
-                      borderRadius={"100px"}
-                    ></Box>
-                    <Text fontSize={"15px"}>
-                      Username should be unique and easy to remember.
-                    </Text>
-                  </Flex>
-                  <Flex alignItems={"center"} gap={"5px"} py={"10px"}>
-                    <Box
-                      w={"8px"}
-                      h={"8px"}
-                      bg={"#00072D"}
-                      borderRadius={"100px"}
-                    ></Box>
-                    <Text fontSize={"15px"}>
-                      Username can only contain underscore (@,$, #. %, etc are
-                      not allowed)
-                    </Text>
-                  </Flex>
-                </Box>
-              </Flex>
-              <Flex marginTop={"200px"} justifyContent={"center"} gap={"60px"}>
-                <Link style={linkStyle} href="/signuppage2">
-                  <Button
-                    w={"200px"}
-                    py={10}
-                    color={"black"}
-                    borderRadius={"100px"}
-                    borderColor={"#00072D"}
-                    backgroundColor={"white"}
-                    outline={"none"}
-                    cursor="pointer"
-                    mt="25px"
-                  >
-                    <Text fontSize={"25px"}>Back</Text>
-                  </Button>
-                </Link>
-                <Link style={linkStyle} href="/signuppage4">
-                  <Button
-                    w={"200px"}
-                    py={10}
-                    color={"black"}
-                    borderRadius={"100px"}
-                    borderColor={"#1AFFD5"}
-                    backgroundColor={"#1AFFD5"}
-                    outline={"none"}
-                    cursor="pointer"
-                    mt="25px"
-                  >
-                    <Text fontSize={"25px"}>Next</Text>
-                  </Button>
-                </Link>
-              </Flex>
-            </Box>
-          </Box>
-          <Box w="50%" h="100vh" backgroundImage="url('/images/guybg.png')">
-            <SignInInstead />
-          </Box>
-        </Flex>
+      <div className="flex flex-col text-left   justify-center lg:px-10 px-5 md:px-0 w-full  md:w-[65%] md:m-auto lg:w-[45%] lg:m-auto ">
+        <div>
+          <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold">
+            Sign Up
+          </h1>
+          <p className=" font-normal text-[15px] md:text-[18px] text-center  text-[#575757]">
+            Complete your registration
+          </p>
+        </div>
+        <div>
+          <div className="hidden  md:block absolute top-[60px] left-0 ">
+            <Image src={line} alt="line" />
+          </div>
+        </div>
+        <div></div>
+
+        <div className="flex flex-col w-full lg:w-full mt-5">
+          <h1 className=" md:text-[20px] text-[15px] font-normal text-[#0E0008]">
+            Preferred username
+          </h1>
+          <input
+            className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
+            type="text"
+            placeholder="codeboyfriend"
+          />
+        </div>
+        <Box>
+          <Flex alignItems={"center"} gap={"5px"} py={"10px"}>
+            <Box
+              w={"8px"}
+              h={"8px"}
+              bg={"#00072D"}
+              borderRadius={"100px"}
+            ></Box>
+            <Text fontSize={"15px"}>
+              Usernames are how other Lutees will see you.
+            </Text>
+          </Flex>
+          <Flex alignItems={"center"} gap={"5px"} py={"10px"}>
+            <Box
+              w={"8px"}
+              h={"8px"}
+              bg={"#00072D"}
+              borderRadius={"100px"}
+            ></Box>
+            <Text fontSize={"15px"}>
+              Username must not contain offesive words to any race, religion or
+              gender.
+            </Text>
+          </Flex>
+          <Flex alignItems={"center"} gap={"5px"} py={"10px"}>
+            <Box
+              w={"8px"}
+              h={"8px"}
+              bg={"#00072D"}
+              borderRadius={"100px"}
+            ></Box>
+            <Text fontSize={"15px"}>
+              Username should be unique and easy to remember.
+            </Text>
+          </Flex>
+          <Flex alignItems={"center"} gap={"5px"} py={"10px"}>
+            <Box
+              w={"8px"}
+              h={"8px"}
+              bg={"#00072D"}
+              borderRadius={"100px"}
+            ></Box>
+            <Text fontSize={"15px"}>
+              Username can only contain underscore (@,$, #. %, etc are not
+              allowed)
+            </Text>
+          </Flex>
+        </Box>
+        <div className="flex mt-[30px] md:gap-[60px] gap-[15px]">
+          <Link style={linkStyle} href="/signuppage3">
+            <button className="px-[60px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] ">
+              Back
+            </button>
+          </Link>
+         
+            <button
+              className="px-[60px] py-[10px] rounded-full text-black bg-white border border-primary bg-white cursor-pointer mt-[20px] text-[20px] bg-primary"
+              onClick={() => setShowAddNewNotePopup(true)}
+            >
+              Next
+            </button>
+         
+        </div>
       </div>
     </div>
   );

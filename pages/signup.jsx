@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AuthenticationNavbar from "@/components/AuthenticationNavbar";
 import { Box } from "@chakra-ui/react";
-import SignUpPage1 from "@/pages/SignUpPage1";
+import SignUpPage1 from "@/components/SignUpPage1";
 
 const signup = () => {
   return (
