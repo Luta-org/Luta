@@ -10,18 +10,16 @@ const AboutFrame = () => {
   return (
     <Flex className={styles.aboutframe} sx={{
         w: '100vw',
-        h: '45vh',
+        h: '70vh',
         flexDir: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         color: '#fff'
     }}>
         <Box>
-            <Heading>About Us</Heading>
+            <Heading className="text-2xl md:text-3xl font-bold">About Us</Heading>
         </Box>
-        <Box w={[300, 400, 500]} p={[10, 30, 50]} sx={{
-            textAlign: 'center'
-        }}>
+        <Box className="w-[22rem] md:w-[32rem] text-center text-md md:text-xl mx-6">
             <Text>Luta is a social networking platform created to help Nigerian students in higher institutions connect across different schools in the country.</Text>
         </Box>
     </Flex>

@@ -30,13 +30,11 @@ const SectionB = () => {
         </Box>
         
         <Center>
-            <Text sx={{
+            <Text className='text-md md:text-xl' sx={{
                 color: '#fff',
-                fontSize: '1.5rem',
                 w: '25rem'
             }}>Relieve the stress of academics with bants on Luta</Text>
         </Center>
-
     </Flex>
   )
 }
