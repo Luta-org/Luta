@@ -16,6 +16,13 @@
     background-position: center;
 }
 
+.vision {
+    background-image: url(../public/images/Frame\ 609.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* .scroll::before {
     content: '';
     height: 10rem;
