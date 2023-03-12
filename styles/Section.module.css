@@ -23,15 +23,13 @@
     background-position: center;
 }
 
-/* .scroll::before {
-    content: '';
-    height: 10rem;
-    width: 10rem;
-    background-color: red;
-    border-radius: 100%;
-    padding: 1.2rem 2rem;
-    transform: translateX(-100%);
-} */
+
+.contact {
+    background-image: url(../public/images/Frame\ 1278.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .aboutframe {
     background-image: url(../public//images//Rectangle\ 1168.svg);

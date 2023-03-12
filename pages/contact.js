@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 const contact = () => {
   return (
-    <div className="w-[100vw]">
+    <div className="w-[100vw] overflow-hidden">
       <Navbar 
         navColor={'#00072d'} 
         color={'transparent'}
