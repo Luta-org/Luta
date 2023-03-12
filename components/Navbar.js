@@ -57,19 +57,23 @@ const Navbar = ({
 
             {/* Buttons */}
             <ButtonGroup gap={'4'} >
+<Link style={linkStyle} href="/login">
+
                 <Button
                     text={'Log in'}
                     bgColor={'transparent'}
                     textColor={textColor}
                     borderStyle={borderStyle}
                 />
-
-                <Button
+                </Link>
+<Link style={linkStyle} href="/signup">
+ <Button
                     text={'Sign up'}
                     bgColor={'#1affd5'}
                     textColor={'#00072d'}
                     borderStyle={'1px solid #00072D'} 
-                />
+                /></Link>
+               
             </ButtonGroup>
         </Box>
 
