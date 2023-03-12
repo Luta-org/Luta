@@ -10,7 +10,7 @@ const Form = () => {
         <Text>Fields marked * are required</Text>
         
         <label>
-            First Name*
+            First Name**
             <input
                 type={'text'}
                 required 
