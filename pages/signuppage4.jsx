@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React, { useState } from "react";
 import line from "../public/images/line.png";
@@ -93,20 +93,18 @@ const signuppage4 = () => {
           </Flex>
         </Box>
         <div className="flex mt-[30px] md:gap-[60px] gap-[15px]">
-          <Link style={linkStyle} href="/signuppage3">
-            <button className="px-[60px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] ">
-              Back
-            </button>
-          </Link>
-         
-            <button
-              className="px-[60px] py-[10px] rounded-full text-black bg-white border border-primary bg-white cursor-pointer mt-[20px] text-[20px] bg-primary"
-              onClick={() => setShowAddNewNotePopup(true)}
-            >
-              Next
-            </button>
-         
+          <button className="px-[60px] py-[10px] rounded-full text-black bg-[#1AFFD5] border border-primary bg-primary cursor-pointer mt-[20px] text-[20px] w-full "  onClick={() => setShowAddNewNotePopup(true)}>
+            Sign Up
+          </button>
         </div>
+        <Center>
+          <div className="flex gap-2  align-center mt-10">
+            <p className="text-[#313232]">Alresdy a member?</p>
+            <Link style={linkStyle} href="/login">
+              <p className="text-[#0D806B]">Login</p>
+            </Link>
+          </div>
+        </Center>
       </div>
     </div>
   );

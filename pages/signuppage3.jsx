@@ -1,5 +1,5 @@
 import AuthenticationNavbar from '@/components/AuthenticationNavbar'
-import { Box } from '@chakra-ui/react'
+import { Box,Center, HStack, PinInput, PinInputField } from '@chakra-ui/react'
 import React from 'react'
 import Link from "next/link";
 import Image from 'next/image';
@@ -31,39 +31,52 @@ const signuppage3 = () => {
           </div>
         </div>
         <div>
-          {/* <div className="flex flex-col  mt-5">
+          <div className="flex flex-col w-[30px]  mt-5">
             <HStack mt={"20px"}>
               <PinInput size="lg">
                 <PinInputField />
                 <PinInputField />
                 <PinInputField />
                 <PinInputField />
+                <PinInputField />
+                <PinInputField />
               </PinInput>
             </HStack>
-          </div> */}
-
-          <div className="flex flex-col  align-center mt-5">
-            <p className="text-[#313232]">
-              Didn’t Recieve OTP?
-            </p>
-            <p className="text-[#0D806B]">
-              Resend
-            </p>
           </div>
+          <Center>
+            <div className="flex gap-2  align-center mt-10">
+              <p className="text-[#313232]">Didn’t Recieve OTP?</p>
+              <Link style={linkStyle} href="/login">
+                <p className="text-[#0D806B]">Resend</p>
+              </Link>
+            </div>
+          </Center>
+          <Center>
+            <p className="mt-3 text-primary">Try a different method</p>
+          </Center>
+         
         </div>
 
-        <div className="flex mt-[30px] md:gap-[60px] gap-[15px]">
+        <div className="flex mt-[30px] flex-col">
+          <Link style={linkStyle} href="/signuppage4">
+            <button className="px-[60px] py-[10px] rounded-full text-black bg-[#1AFFD5] border border-primary bg-white cursor-pointer mt-[20px] text-[20px] w-full ">
+              Validate Profile
+            </button>
+          </Link>
           <Link style={linkStyle} href="/signuppage2">
-            <button className="px-[60px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] ">
+            <button className="px-[60px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] bg-primary w-full  ">
               Back
             </button>
           </Link>
-          <Link style={linkStyle} href="/signuppage4">
-            <button className="px-[60px] py-[10px] rounded-full text-black bg-white border border-primary bg-white cursor-pointer mt-[20px] text-[20px] bg-primary  ">
-              Next
-            </button>
-          </Link>
         </div>
+        <Center>
+          <div className="flex gap-2  align-center mt-10">
+            <p className="text-[#313232]">Alresdy a member?</p>
+            <Link style={linkStyle} href="/login">
+              <p className="text-[#0D806B]">Login</p>
+            </Link>
+          </div>
+        </Center>
       </div>
     </div>
   );

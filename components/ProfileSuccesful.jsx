@@ -30,7 +30,7 @@ const Profilesuccessful = ({ isOpen }) => {
           <Link style={linkStyle} href="/login">
             <button
               className="px-[60px] py-[10px] rounded-full text-black  border border-primary cursor-pointer mt-[20px] text-[20px] bg-primary"
-              onClick={() => setShowAddNewNotePopup(true)}
+              
             >
               Login
             </button>

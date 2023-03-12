@@ -1,4 +1,4 @@
-import { Text, Box,  Checkbox } from "@chakra-ui/react";
+import { Text, Box,  Checkbox,Center } from "@chakra-ui/react";
 import React from "react";
 import AuthenticationNavbar from "@/components/AuthenticationNavbar";
 import Link from "next/link";
@@ -74,19 +74,27 @@ const SignUpPage2 = () => {
             </div>
           </div>
         </div>
-      
-        <div className="flex md:gap-[60px] gap-[15px]">
+
+        <div className="flex justify-between">
           <Link style={linkStyle} href="/signup">
-            <button className="px-[60px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] ">
+            <button className="px-[60px] md:px-[100px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] ">
               Back
             </button>
           </Link>
           <Link style={linkStyle} href="/signuppage3">
-            <button className="px-[60px] py-[10px] rounded-full text-black bg-white border border-primary bg-white cursor-pointer mt-[20px] text-[20px] bg-primary  ">
+            <button className="px-[60px] md:px-[100px] py-[10px] rounded-full text-black  border border-primary  cursor-pointer mt-[20px] text-[20px] bg-primary  ">
               Next
             </button>
           </Link>
         </div>
+        <Center>
+          <div className="flex gap-2  align-center mt-10">
+            <p className="text-[#313232]">Alresdy a member?</p>
+            <Link style={linkStyle} href="/login">
+              <p className="text-[#0D806B]">Login</p>
+            </Link>
+          </div>
+        </Center>
       </div>
     </div>
   );
