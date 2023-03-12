@@ -26,9 +26,11 @@ const SectionA = () => {
         />
       </Stack>
 
-      <Box className='hidden' sx={{
-        w: '50vh'
-      }}>
+      <Box sx={{
+        w: 'full',
+        transform: 'translateY(20%)',
+        borderRadius: '10px'
+      }} className='md:hidden bg-white'>
         <Image
             src="/images/zachary-nelson-98Elr-LIvD8-unsplash-removebg-preview 2.svg"
             alt="luta logo"
