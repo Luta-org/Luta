@@ -2,8 +2,7 @@ import {
     Box,
     Stack,
     Heading,
-    Text,
-    Flex
+    Text
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,43 +12,52 @@ import {
     FaLinkedin 
 } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
-import styles from '../styles/Section.module.css';
 
 const Footer = () => {
     const linkStyle = {
-        color: '#1AFFD5',
-        fontSize: '16px',
+        color: '#fff',
         textDecoration: 'none',
-        fontSize: '.8rem'
     }
 
   return (
-    <Box sx={{
+    <Box className='relative' sx={{
         backgroundColor: '#00072D',
-        p: ['1rem 2rem', '2rem 4rem'],
+        p: ['1rem 2rem'],
         color: '#fff'
     }}>
-        <Box className='flex justify-between'>
-            <Stack direction={'column'} spacing={20}>
-                <Stack direction={'row'} spacing={5}>
+        <Box className='w-full flex flex-col md:flex-row justify-between items-center md:items-start'>
+            <Stack className='flex flex-col items-center md:items-start' direction={'column'} spacing={12}>
+                <Box className='flex absolute top-[-15px] right-12 md:right-18 md:hidden flex-col justify-center items-center' sx={{
+                    height: '3.5rem',
+                    width: '3.5rem',
+                    textAlign: 'center',
+                    lineHeight: '-1rem',
+                    backgroundColor: '#00072D',
+                    border: '2px solid #fff',
+                    p: '.2rem',
+                    borderRadius: '100%',
+                    cursor: 'pointer'
+                }}>
+                    <IoIosArrowUp />
+                    <Text sx={{
+                        fontSize: '.6rem'
+                    }}>Scroll up</Text>
+                </Box>
+
+                <Stack className='w-26 h-full flex justify-between items-center' direction={'row'} spacing={5}>
                     <Image 
-                    src="/Vector.svg"
-                    alt="luta logo"
-                    width="40"
-                    height="40"
+                        src="/Vector.svg"
+                        alt="luta logo"
+                        width="40"
+                        height="40"
                     />
 
-                    <Heading>LUTA</Heading>
+                    <Heading className='text-xl font-bold'>LUTA</Heading>
                 </Stack>
 
-                <Text sx={{
-                    fontSize: '.7rem'
-                }}>Connecting Students</Text>
+                <Text className='text-md'>Connecting Students</Text>
 
-                <Flex sx={{
-                    fontSize: '.9rem',
-                    justifyContent: 'space-between'
-                }}>
+                <div className='hidden w-full md:flex justify-between text-xl'>
                     <Link style={linkStyle} href={'#'}>
                         <FaTwitter />
                     </Link>
@@ -59,37 +67,37 @@ const Footer = () => {
                     <Link style={linkStyle} href={'#'}>
                         <MdMail />
                     </Link>
-                </Flex>
+                </div>
             </Stack>
 
             {/* Scroll Button */}
-            <Box className={styles.scroll} sx={{
-                height: '3.3rem',
-                width: '3.3rem',
+            <Box className='hidden md:flex flex-col justify-center items-center' sx={{
+                height: '3.5rem',
+                width: '3.5rem',
                 textAlign: 'center',
                 lineHeight: '-1rem',
                 backgroundColor: '#00072D',
-                border: '1px solid #fff',
+                border: '2px solid #fff',
                 p: '.2rem',
                 borderRadius: '100%',
-                transform: 'translateY(-80%)',
+                transform: 'translateY(-70%)',
                 cursor: 'pointer'
             }}>
                 <IoIosArrowUp />
                 <Text sx={{
-                    fontSize: '.5rem'
+                    fontSize: '.6rem'
                 }}>Scroll up</Text>
             </Box>
             
 
             {/* Links */}
-            <Stack direction='column' spacing={'10'} sx={{
+            <Stack className='text-md my-6 md:my-0 leading-8' direction='column' spacing={'10'} sx={{
                 textAlign: 'center'
             }}>
-                <Link style={linkStyle} href={'#'}>
+                <Link style={linkStyle} href={'/about'}>
                     About Us
                 </Link>
-                <Link style={linkStyle} href={'#'}>
+                <Link style={linkStyle} href={'/contact'}>
                     Contact Us
                 </Link>
                 <Link style={linkStyle} href={'#'}>
@@ -104,8 +112,21 @@ const Footer = () => {
             </Stack>
         </Box>
 
-        <Text sx={{
-            fontSize: '.7rem',
+        <div className='w-full md:hidden flex items-center justify-center text-xl my-3'>
+            <Link className='mx-6' style={linkStyle} href={'#'}>
+                <FaTwitter />
+            </Link>
+            <Link className='mx-6' style={linkStyle} href={'#'}>
+                <FaLinkedin />
+            </Link>
+            <Link className='mx-6' style={linkStyle} href={'#'}>
+                <MdMail />
+            </Link>
+        </div>
+
+        
+
+        <Text className='text-sm mt-6' sx={{
             color: '#808396',
             textAlign: 'center'
         }}>&copy; Luta 2023 | All right reserved</Text>

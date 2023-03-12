@@ -9,6 +9,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
  theme: {
+  container: {
+      center: true
+    },
     screens: {
       sm: "320px",
       xm:"400px",
@@ -29,6 +32,5 @@ module.exports = {
         success: "#00072D",
       }
     }
-  },
-  plugins: [],
+  } 
 }
