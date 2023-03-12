@@ -24,7 +24,7 @@ const Navbar = ({
     }
 
   return (
-    <Box className='mb-4' style={{
+    <Box id='#navbar' className='mb-4' style={{
         backgroundColor: bgColor,
         padding: pad,
         display: 'flex',
