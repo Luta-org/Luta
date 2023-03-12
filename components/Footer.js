@@ -71,23 +71,25 @@ const Footer = () => {
             </Stack>
 
             {/* Scroll Button */}
-            <Box className='hidden md:flex flex-col justify-center items-center' sx={{
-                height: '3.5rem',
-                width: '3.5rem',
-                textAlign: 'center',
-                lineHeight: '-1rem',
-                backgroundColor: '#00072D',
-                border: '2px solid #fff',
-                p: '.2rem',
-                borderRadius: '100%',
-                transform: 'translateY(-70%)',
-                cursor: 'pointer'
-            }}>
-                <IoIosArrowUp />
-                <Text sx={{
-                    fontSize: '.6rem'
-                }}>Scroll up</Text>
-            </Box>
+            <Link href="#">
+                <Box className='hidden md:flex flex-col justify-center items-center' sx={{
+                    height: '3.5rem',
+                    width: '3.5rem',
+                    textAlign: 'center',
+                    lineHeight: '-1rem',
+                    backgroundColor: '#00072D',
+                    border: '2px solid #fff',
+                    p: '.2rem',
+                    borderRadius: '100%',
+                    transform: 'translateY(-70%)',
+                    cursor: 'pointer'
+                }}>
+                    <IoIosArrowUp />
+                    <Text sx={{
+                        fontSize: '.6rem'
+                    }}>Scroll up</Text>
+                </Box>
+            </Link>
             
 
             {/* Links */}
