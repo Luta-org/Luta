@@ -16,7 +16,7 @@ const OurApp = () => {
         textAlign: 'center',
     }}>
         <Heading className="text-2xl md:text-3xl font-bold mb-4">Our App</Heading>
-        <Text className="w-[22rem] md:w-[32rem] text-center text-md md:text-xl mx-4">Our platform is a place for individuals to come together and celebrate their quirks and differences. We believe that everyone has something special to offer, and we intend to create a space where people can connect with others who share their passions and interests.</Text>
+        <Text className="w-[20rem] md:w-[32rem] text-center text-md md:text-xl mx-4">Our platform is a place for individuals to come together and celebrate their quirks and differences. We believe that everyone has something special to offer, and we intend to create a space where people can connect with others who share their passions and interests.</Text>
     </Center>
   )
 }
