@@ -32,7 +32,7 @@ const SignUpPage1 = () => {
               Preferred username
             </h1>
             <input
-              className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
+              className="border border-[#C2C3C8] px-2 py-5 rounded-md mt-2"
               type="text"
               placeholder="codeboyfriend"
             />
@@ -43,9 +43,9 @@ const SignUpPage1 = () => {
               Phone Number
             </h1>
             <input
-              className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
+              className="border border-[#C2C3C8] px-2 py-5 rounded-md mt-2"
               type="text"
-              placeholder="Select"
+              placeholder="0803xxxxxxxx"
             />
           </div>
         </div>
@@ -84,8 +84,8 @@ const SignUpPage1 = () => {
         <Center>
           <div className="flex gap-2  align-center mt-10">
             <p className="text-[#313232]">Alresdy a member?</p>
-           <Link style={linkStyle} href="/login">
-            <p className="text-[#0D806B]">Login</p>
+            <Link style={linkStyle} href="/login">
+              <p className="text-[#0D806B]">Login</p>
             </Link>
           </div>
         </Center>

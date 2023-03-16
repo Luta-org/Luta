@@ -39,7 +39,7 @@ const signuppage4 = () => {
             Preferred username
           </h1>
           <input
-            className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
+            className="border border-[#C2C3C8] px-2 py-5 rounded-md mt-2"
             type="text"
             placeholder="codeboyfriend"
           />

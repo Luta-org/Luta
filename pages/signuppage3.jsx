@@ -31,18 +31,18 @@ const signuppage3 = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-col w-[30px]  mt-5">
+          <Center className="flex flex-col mt-5">
             <HStack mt={"20px"}>
               <PinInput size="lg">
-                <PinInputField />
-                <PinInputField />
-                <PinInputField />
-                <PinInputField />
-                <PinInputField />
-                <PinInputField />
+                <PinInputField className="w-[50px] md:w-[60px] h-[50px] border border-[#C2C3C8] text-[center]" />
+                <PinInputField className="w-[50px] md:w-[60px] h-[50px] border border-[#C2C3C8] text-[center]"  />
+                <PinInputField className="w-[50px] md:w-[60px] h-[50px] border border-[#C2C3C8] text-[center]"  />
+                <PinInputField className="w-[50px] md:w-[60px] h-[50px] border border-[#C2C3C8] text-[center]"  />
+                <PinInputField className="w-[50px] md:w-[60px] h-[50px] border border-[#C2C3C8] text-[center]"  />
+                <PinInputField className="w-[50px] md:w-[60px] h-[50px] border border-[#C2C3C8] text-[center]"  />
               </PinInput>
             </HStack>
-          </div>
+          </Center>
           <Center>
             <div className="flex gap-2  align-center mt-10">
               <p className="text-[#313232]">Didn’t Recieve OTP?</p>
@@ -57,18 +57,18 @@ const signuppage3 = () => {
          
         </div>
 
-        <div className="flex mt-[30px] flex-col">
+        <Center className="flex mt-[30px] flex-col">
           <Link style={linkStyle} href="/signuppage4">
-            <button className="px-[60px] py-[10px] rounded-full text-black bg-[#1AFFD5] border border-primary bg-white cursor-pointer mt-[20px] text-[20px] w-full ">
+            <button className="px-[60px] py-[10px] rounded-full text-black bg-[#1AFFD5] border border-primary bg-white cursor-pointer mt-[20px] text-[20px] w-[350px] md:w-[470px] lg:w-[400px] ">
               Validate Profile
             </button>
           </Link>
           <Link style={linkStyle} href="/signuppage2">
-            <button className="px-[60px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] bg-primary w-full  ">
+            <button className="px-[60px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] bg-primary w-[350px] md:w-[470px] lg:w-[400px]  ">
               Back
             </button>
           </Link>
-        </div>
+        </Center>
         <Center>
           <div className="flex gap-2  align-center mt-10">
             <p className="text-[#313232]">Alresdy a member?</p>
