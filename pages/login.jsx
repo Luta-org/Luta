@@ -96,7 +96,7 @@ const login = () => {
           </Center>
           <Center>
             <div className="flex gap-2  align-center mt-10">
-              <p className="text-[#313232]">Alresdy a member?</p>
+              <p className="text-[#313232]">Already a member?</p>
               <Link style={linkStyle} href="/login">
                 <p className="text-[#0D806B]">Login</p>
               </Link>

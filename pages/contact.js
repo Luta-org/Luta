@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import FrameOne from "@/components/ContactPage/FrameOne";
-import Form from "@/components/AboutPage/Form";
+import Form from "@/components/ContactPage/Form";
 import FrameTwo from "@/components/ContactPage/FrameTwo";
 import Footer from "@/components/Footer";
 

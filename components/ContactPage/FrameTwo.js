@@ -8,7 +8,7 @@ import Image from 'next/image';
 const FrameTwo = () => {
   return (
     <div className='relative overflow-hidden w-full text-center pb-16'>
-        <Box className='absolute top-[-24px] left-0 -z-50'>
+        <Box className='absolute top-0 left-0 -z-50'>
             <Image
                 src={'/images/Rectangle 1177.svg'}
                 alt="general"
@@ -22,6 +22,7 @@ const FrameTwo = () => {
         <Box className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center'>
             <Box sx={{
                 width: '17rem',
+                height: '17rem',
                 padding: '1rem',
                 borderRadius: '16px',
                 boxShadow: '1px 1px 5px #00072D',
@@ -56,6 +57,7 @@ const FrameTwo = () => {
 
             <Box sx={{
                 width: '17rem',
+                height: '17rem',
                 padding: '1rem',
                 borderRadius: '16px',
                 boxShadow: '1px 1px 5px #00072D',
@@ -90,6 +92,7 @@ const FrameTwo = () => {
 
             <Box sx={{
                 width: '17rem',
+                height: '17rem',
                 padding: '1rem',
                 borderRadius: '16px',
                 boxShadow: '1px 1px 5px #00072D',
@@ -124,6 +127,7 @@ const FrameTwo = () => {
 
             <Box sx={{
                 width: '17rem',
+                height: '17rem',
                 padding: '1rem',
                 borderRadius: '16px',
                 boxShadow: '1px 1px 5px #00072D',
