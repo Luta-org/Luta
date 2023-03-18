@@ -45,7 +45,7 @@ const signuppage4 = () => {
           />
         </div>
         <Box>
-          <Flex alignItems={"center"} gap={"5px"} py={"10px"}>
+          <Flex alignItems={"center"} gap={"5px"} py={"10px"} mt={"10px"}>
             <Box
               w={"8px"}
               h={"8px"}

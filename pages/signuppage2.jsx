@@ -66,8 +66,15 @@ const SignUpPage2 = () => {
               placeholder="******"
             />
           </div>
-          <div className="gap-[5px] text-left mt-[10px]">
-            <Checkbox />
+          <div className="flex items-center gap-[5px] text-left mt-[10px]">
+            <input
+              type="checkbox"
+              id="myCheckbox"
+              name="myCheckbox"
+              value="1"
+            />
+            {/* <label for="myCheckbox">My Checkbox</label> */}
+
             <div className="flex text-[12px] md:text-[15px] gap-[4px]">
               By signing up, you agree to our
               <p className="text-primary">terms and conditions. .</p>

@@ -44,7 +44,7 @@ const forgotpassword = () => {
             </p>
           </div>
           <div>
-            <div className="justify-center mt-10">
+            <div className="justify-center mt-10 lg:w-[450px] md:w-[400px] m-auto">
               <Image src={checkpoint3} alt="fpp" />
             </div>
           </div>

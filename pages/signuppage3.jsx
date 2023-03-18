@@ -32,7 +32,7 @@ const signuppage3 = () => {
         </div>
         <div>
           <Center className="flex flex-col mt-5">
-            <HStack mt={"20px"}>
+            <HStack mt={"20px"} className="md:gap-[20px]">
               <PinInput size="lg">
                 <PinInputField className="w-[50px] md:w-[60px] h-[50px] border border-[#C2C3C8] text-[center]" />
                 <PinInputField className="w-[50px] md:w-[60px] h-[50px] border border-[#C2C3C8] text-[center]"  />
