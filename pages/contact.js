@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
 import FrameOne from "@/components/ContactPage/FrameOne";
-import Form from "@/components/AboutPage/Form";
+import Form from "@/components/ContactPage/Form";
 import FrameTwo from "@/components/ContactPage/FrameTwo";
 import Footer from "@/components/Footer";
 
 const contact = () => {
   return (
-    <div className="w-[100vw]">
+    <div className="w-[100vw] overflow-hidden">
       <Navbar 
         navColor={'#00072d'} 
         color={'transparent'}

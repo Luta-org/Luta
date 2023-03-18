@@ -6,6 +6,7 @@ import AboutFrame from '@/components/AboutPage/AboutFrame';
 import OurApp from '@/components/AboutPage/OurApp';
 import Mission from '@/components/AboutPage/Mission';
 import Vision from '@/components/AboutPage/Vision';
+import Team from '@/components/AboutPage/Team';
 import Invite from '@/components/AboutPage/Invite';
 import Footer from '@/components/Footer';
 
@@ -25,6 +26,7 @@ const about = () => {
       <OurApp />
       <Mission />
       <Vision />
+      <Team />
       <Invite />
       <Footer />
     </Box>

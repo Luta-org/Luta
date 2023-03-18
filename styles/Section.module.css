@@ -9,15 +9,19 @@
     background-repeat: no-repeat;
 }
 
-/* .scroll::before {
-    content: '';
-    height: 10rem;
-    width: 10rem;
-    background-color: red;
-    border-radius: 100%;
-    padding: 1.2rem 2rem;
-    transform: translateX(-100%);
-} */
+.mission {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../public/images/Frame\ 608.svg);
+
+
+.vision {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../public/images/Frame\ 609.svg);
+}
+
+
+.contact {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../public/images/Frame\ 1278.svg);
+}
+
 
 .aboutframe {
     background-image: url(../public//images//Rectangle\ 1168.svg);

@@ -24,7 +24,7 @@ const Navbar = ({
     }
 
   return (
-    <Box className='mb-4' style={{
+    <Box id='#navbar' className='mb-4' style={{
         backgroundColor: bgColor,
         padding: pad,
         display: 'flex',
@@ -44,7 +44,7 @@ const Navbar = ({
         <Box style={{ color: navColor }} className='w-2/3 hidden md:flex items-center justify-between'>
             {/* Links */}
             <Stack className='text-md md:text-[.9rem] lg:text-[1rem]' direction='row' spacing={'30'}>
-                <Link style={linkStyle} href={'#'}>
+                <Link style={linkStyle} href={'/'}>
                     Home
                 </Link>
                 <Link style={linkStyle} href={'#'}>
