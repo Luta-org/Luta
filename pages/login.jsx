@@ -99,6 +99,7 @@ const login = () => {
               <p className="text-[#313232]">Don't have an account yet?</p>
               <Link style={linkStyle} href="/signup">
                 <p className="text-[#0D806B]">Register</p>
+
               </Link>
             </div>
           </Center>
