@@ -42,7 +42,7 @@ const login = () => {
                 Phone Number
               </h1>
               <input
-                className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
+                className="border border-[#C2C3C8] px-2 py-5 rounded-md mt-2"
                 type="text"
                 placeholder="0803xxxxxxxx"
               />
@@ -53,7 +53,7 @@ const login = () => {
                 Password
               </h1>
               <input
-                className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
+                className="border border-[#C2C3C8] px-2 py-5 rounded-md mt-2"
                 type="text"
                 placeholder="******"
               />
@@ -96,9 +96,10 @@ const login = () => {
           </Center>
           <Center>
             <div className="flex gap-2  align-center mt-10">
-              <p className="text-[#313232]">Already a member?</p>
-              <Link style={linkStyle} href="/login">
-                <p className="text-[#0D806B]">Login</p>
+              <p className="text-[#313232]">Don't have an account yet?</p>
+              <Link style={linkStyle} href="/signup">
+                <p className="text-[#0D806B]">Register</p>
+
               </Link>
             </div>
           </Center>

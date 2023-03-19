@@ -1,9 +1,9 @@
-import { Box,Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import React from "react";
 import Link from "next/link";
 
-const Profilesuccessful = ({ isOpen }) => {
-     const linkStyle = {
+const PasswordSuccessful = ({ isOpen }) => {
+  const linkStyle = {
     textDecoration: "none",
   };
   return (
@@ -24,14 +24,11 @@ const Profilesuccessful = ({ isOpen }) => {
       >
         <div className="flex flex-col bg-[#B3FFF1] w-[90vw] text-center justify-center relative padding[30px] rounded-[10px] max-w-[500px] items-center py-10">
           <h1 className="text-secondary text-[40px] heding-[40px]">
-            Profile created
+            Password Reset
             <br /> successfully
           </h1>
           <Link style={linkStyle} href="/login">
-            <button
-              className="px-[60px] py-[10px] rounded-full text-black  border border-primary cursor-pointer mt-[20px] text-[20px] bg-primary"
-              
-            >
+            <button className="px-[60px] py-[10px] rounded-full text-black  border border-primary cursor-pointer mt-[20px] text-[20px] bg-primary">
               Login Now
             </button>
           </Link>
@@ -41,4 +38,4 @@ const Profilesuccessful = ({ isOpen }) => {
   );
 };
 
-export default Profilesuccessful;
+export default PasswordSuccessful;
