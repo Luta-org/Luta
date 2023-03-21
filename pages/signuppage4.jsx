@@ -9,11 +9,11 @@ const SignupPage4 = () => {
   const linkStyle = {
     textDecoration: "none",
   };
-  const [showAddNewNotePopup, setShowAddNewNotePopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   return (
     <div>
-      <Profilesuccessful isOpen={showAddNewNotePopup} />
+      <Profilesuccessful isOpen={showPopup} />
       <Box>
         <AuthenticationNavbar />
       </Box>
@@ -93,7 +93,7 @@ const SignupPage4 = () => {
           </Flex>
         </Box>
         <div className="flex mt-[30px] md:gap-[60px] gap-[15px]">
-          <button className="px-[60px] py-[10px] rounded-full text-black border border-primary bg-primary cursor-pointer mt-[20px] text-[20px] w-full "  onClick={() => setShowAddNewNotePopup(true)}>
+          <button className="px-[60px] py-[10px] rounded-full text-black border border-primary bg-primary cursor-pointer mt-[20px] text-[20px] w-full "  onClick={() => setShowPopup(true)}>
             Sign Up
           </button>
         </div>
