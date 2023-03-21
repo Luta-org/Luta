@@ -1,0 +1,19 @@
+/* Axiforma Regular */
+@font-face {
+  font-family: 'Axiforma';
+  src: url('/fonts/kastelov - Axiforma Regular.otf') format('otf'),
+        url('/fonts/kastelov - Axiforma Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Axiforma Bold */
+@font-face {
+  font-family: 'Axiforma';
+  src: url('/fonts/kastelov - Axiforma Bold.otf') format('otf'),
+       url('/fonts/kastelov - Axiforma Bold.otf') format('otf');
+  font-weight: bold;
+  font-style: "800px";
+  font-display: swap;
+}

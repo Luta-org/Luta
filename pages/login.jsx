@@ -23,7 +23,7 @@ const login = () => {
             </div>
             </Center>
            
-            <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold">
+            <h1 className="text-[#0E0008]  text-[30px] md:text-[48px] text-center font-bold">
               Welcome Back
             </h1>
             <p className=" font-normal text-base md:text-[20px] text-center mt-2 text-[#575757]">
@@ -96,7 +96,7 @@ const login = () => {
           </Center>
           <Center>
             <div className="flex gap-2  align-center mt-10">
-              <p className="text-[#313232]">Don't have an account yet?</p>
+              <p className="text-[#313232]">Dont have an account yet?</p>
               <Link style={linkStyle} href="/signup">
                 <p className="text-[#0D806B]">Register</p>
 

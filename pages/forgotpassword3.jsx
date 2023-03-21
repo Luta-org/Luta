@@ -17,15 +17,15 @@ import Image from "next/image";
 import AuthenticationNavbar from "@/components/AuthenticationNavbar";
 import PasswordSuccessful from "@/components/PasswordSuccessful";
 
-const forgotpassword = () => {
+const ForgotpPassword = () => {
   const linkStyle = {
     textDecoration: "none",
   };
-  const [showAddNewNotePopup, setShowAddNewNotePopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   return (
     <div>
-      <PasswordSuccessful isOpen={showAddNewNotePopup} />
+      <PasswordSuccessful isOpen={showPopup} />
       <AuthenticationNavbar />
       <div>
         <div className="flex flex-col text-left pt-5  justify-center lg:px-10 px-5 md:px-0 w-full  md:w-[60%] md:m-auto lg:w-[45%] lg:m-auto ">
@@ -91,7 +91,7 @@ const forgotpassword = () => {
               outline={"none"}
               cursor="pointer"
               mt="35px"
-              onClick={() => setShowAddNewNotePopup(true)}
+              onClick={() => setShowPopup(true)}
             >
               <Text fontSize={"25px"}>Set Password</Text>
             </Button>
@@ -102,4 +102,4 @@ const forgotpassword = () => {
   );
 };
 
-export default forgotpassword;
+export default ForgotpPassword;
