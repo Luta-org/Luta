@@ -55,7 +55,7 @@ const forgotpassword = () => {
           </Center>
           <Center>
             <div className="flex gap-2  align-center mt-10">
-              <p className="text-[#313232]">Didn't receive OTP?</p>
+              <p className="text-[#313232]">Didnt receive OTP?</p>
               <Link style={linkStyle} href="/">
                 <p className="text-[#0D806B]">Resend</p>
               </Link>
