@@ -33,12 +33,14 @@ const Navbar = ({
     }}>
         {/* Logo */}
         <Box className='w-1/3'>
-            <Image 
-                src="/Vector.svg"
-                alt="luta logo"
-                width="40"
-                height="40"
-            />
+            <Link href={'/'}>
+                <Image 
+                    src="/Vector.svg"
+                    alt="luta logo"
+                    width="40"
+                    height="40"
+                />
+            </Link>
         </Box>
 
         <Box style={{ color: navColor }} className='w-2/3 hidden md:flex items-center justify-between'>
