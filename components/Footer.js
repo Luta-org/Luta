@@ -45,12 +45,14 @@ const Footer = () => {
                 </Box>
 
                 <Stack className='w-26 h-full flex justify-between items-center' direction={'row'} spacing={5}>
-                    <Image 
-                        src="/Vector.svg"
-                        alt="luta logo"
-                        width="40"
-                        height="40"
-                    />
+                    <Link href={'/'}>
+                        <Image 
+                            src="/Vector.svg"
+                            alt="luta logo"
+                            width="40"
+                            height="40"
+                        />
+                    </Link>
 
                     <Heading className='text-xl font-bold'>LUTA</Heading>
                 </Stack>

@@ -3,13 +3,10 @@ import Link from 'next/link';
 import { 
     Box,
     ButtonGroup,
-    Stack,
-    Text
+    Stack
 } from "@chakra-ui/react";
 import Button from "./Buttons/NavButtons";
-import {
-    GiDiceSixFacesFour
-} from 'react-icons/gi'
+import { useState } from 'react';
 
 const Navbar = ({
     bgColor,
@@ -22,6 +19,13 @@ const Navbar = ({
     const linkStyle = {
         textDecoration: 'none'
     }
+
+    let Links = [
+        { name: "Home", link: "/" },
+        { name: "Features", link: "#" },
+        { name: "Faqs", link: "#" },
+      ];
+    const [click, setClick] = useState(false);
 
   return (
     <Box id='#navbar' className='mb-4' style={{
@@ -59,27 +63,26 @@ const Navbar = ({
 
             {/* Buttons */}
             <ButtonGroup gap={'4'} >
-<Link style={linkStyle} href="/login">
-
-                <Button
-                    text={'Log in'}
-                    bgColor={'transparent'}
-                    textColor={textColor}
-                    borderStyle={borderStyle}
-                />
+                <Link style={linkStyle} href="/login">
+                    <Button
+                        text={'Log in'}
+                        bgColor={'transparent'}
+                        textColor={textColor}
+                        borderStyle={borderStyle}
+                    />
                 </Link>
-<Link style={linkStyle} href="/signup">
- <Button
-                    text={'Sign up'}
-                    bgColor={'#1affd5'}
-                    textColor={'#00072d'}
-                    borderStyle={'1px solid #00072D'} 
-                /></Link>
-               
+                <Link style={linkStyle} href="/signup">
+                    <Button
+                        text={'Sign up'}
+                        bgColor={'#1affd5'}
+                        textColor={'#00072d'}
+                        borderStyle={'1px solid #00072D'} 
+                    />
+                </Link>
             </ButtonGroup>
         </Box>
 
-        <Box className='md:hidden text-2xl'>
+        <Box onClick={() => setClick(!click)} className='md:hidden text-2xl'>
             <Image 
                 src={'/images/menu.svg'}
                 alt={"vector"}
@@ -88,6 +91,20 @@ const Navbar = ({
                 style={{ backgroundColor: color }}
             />
         </Box>
+
+        {click && 
+            <Box className='w-full flex flex-col text-md bg-white absolute left-0 top-16 cursor-pointer md:hidden pb-3 pl-3 z-[1] transition-all duration-300 ease-in'>
+            <Link className='text-black py-4' href={'/'}>
+                Home
+            </Link>
+            <Link className='text-black py-4' href={'#'}>
+                Features
+            </Link>
+            <Link className='text-black py-4' href={'#'}>
+                FAQs
+            </Link>
+        </Box>
+        }
     </Box>
   )
 }
