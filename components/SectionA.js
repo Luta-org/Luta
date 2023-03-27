@@ -7,6 +7,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import Buttons from './Buttons/Button';
+import Link from 'next/link';
 
 const SectionA = () => {
   
@@ -19,11 +20,13 @@ const SectionA = () => {
           lineHeight: '1.3em',
           py: '1.5rem'
         }}>Connect with fellow students across higher institutions in Nigeria without any hurdles.</Text>
-        <Buttons
-          text={'Get Started'}  
-          bgColor={'#1affd5'}
-          color={'#00072d'}
-        />
+        <Link href={'/signup'}>
+          <Buttons
+            text={'Get Started'}  
+            bgColor={'#1affd5'}
+            color={'#00072d'}
+          />
+        </Link>
       </Stack>
 
       <Box sx={{

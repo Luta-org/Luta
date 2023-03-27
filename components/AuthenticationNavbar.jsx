@@ -6,11 +6,11 @@ import harmbugger from "../public/images/harmbugger.png";
 
 const AuthenticationNavbar = () => {
     let Links = [
-      { name: "Home", link: "#" },
-      { name: "About", link: "#" },
+      { name: "Home", link: "/" },
+      { name: "About", link: "/about" },
       { name: "Features", link: "#" },
       { name: "Faqs", link: "#" },
-      { name: "Contact Us", link: "#" },
+      { name: "Contact Us", link: "/contact" },
     ];
       const [click, setClick] = useState(false);
       const [activeLink, setActiveLink] = useState("");
@@ -22,9 +22,9 @@ const AuthenticationNavbar = () => {
     <div className="w-full z-[999] sticky bg-white top-0 left-0 px-1 lg:px-2 md:px-0">
       <div className="md:flex items-center gap-[20px] md:w-full py-4 md:px-4 px-2">
         <div className="w-36 lg:w-24">
-          <div>
-            <Image src="/Vector.svg" alt="luta logo" width="50" height="40" />
-          </div>
+          <Link href={'/'}>
+            <Image src="/Vector.svg" alt="luta logo" width="40" height="40" />
+          </Link>
         </div>
 
         <div
