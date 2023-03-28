@@ -1,12 +1,16 @@
 .sectionb {
     background-image: url(../public/images/Rectangle\ 1170.svg);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 .sectionc {
     background-image: url(../public/images/Rectangle\ 1170\(1\).svg);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mission {
