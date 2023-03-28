@@ -14,18 +14,18 @@ const SectionC = () => {
         alignItems: 'center',
     }}>
         <Center className='w-1/2'>
-            <Text className='text-md md:text-xl md:w-25px pl-4' sx={{
-                color: '#fff',
+            <Text className='text-md md:text-xl pl-4' sx={{
+                color: '#fff'
             }}>Luta cares about your privacy. Connect across schools without using your phone number.</Text>
         </Center>
 
-        <Box className='w-1/2 flex justify-end'>
+        <Box className='w-1/2 flex justify-start'>
             <Image
                 src={"/images/iPhone 13 Mockup label.svg"}
                 alt="phone"
                 width="1"
                 height="4"
-                className={"w-[10rem] md:w-[14rem] md:-translate-x-32"}
+                className={"w-[10rem] md:w-[14rem] md:translate-x-[2rem] lg:translate-x-[10rem]"}
             />
         </Box>
     </Flex>

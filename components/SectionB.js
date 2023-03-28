@@ -20,7 +20,7 @@ const SectionB = () => {
                 alt="phone"
                 width="1"
                 height="4"
-                className={"w-[10rem] md:w-[14rem] md:-translate-x-32"}            
+                className={"w-[10rem] md:w-[14rem] md:-translate-x-[2rem] lg:-translate-x-[10rem]"}            
             />
         </Box>
         

@@ -32,10 +32,9 @@ export default function Home() {
             <SectionA />
           </Box>
         
-        <Box py={'1rem'} style={{
+        <Box py={'1rem'} className='md:mx-[2rem]' style={{
           backgroundColor: '#fff',
-          color: '#00072D',
-          margin: '0 2rem'
+          color: '#00072D'
         }}>
           {/* About */}
           <About />
