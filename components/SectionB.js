@@ -20,12 +20,6 @@ const SectionB = () => {
                 alt="phone"
                 width="1"
                 height="4"
-                style={{
-                    // height: '75%',
-                    // width: '70%',
-                    // border: '.6rem solid #00072D',
-                    // borderRadius: '3rem'
-                }}
                 className={"w-[10rem] md:w-[14rem] md:-translate-x-32"}            
             />
         </Box>

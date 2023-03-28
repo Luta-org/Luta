@@ -12,28 +12,20 @@ const SectionC = () => {
     <Flex className={styles.sectionc} sx={{
         my: '1rem',
         alignItems: 'center',
-        justifyContent: 'space-evenly'
     }}>
-        <Center>
-            <Text sx={{
+        <Center className='w-1/2'>
+            <Text className='text-md md:text-xl md:w-25px pl-4' sx={{
                 color: '#fff',
-                fontSize: '1.5rem',
-                w: '25rem'
             }}>Luta cares about your privacy. Connect across schools without using your phone number.</Text>
         </Center>
 
-        <Box>
+        <Box className='w-1/2 flex justify-end'>
             <Image
                 src={"/images/iPhone 13 Mockup label.svg"}
                 alt="phone"
                 width="1"
                 height="4"
-                style={{
-                    height: '75%',
-                    width: '70%',
-                    border: '.6rem solid #00072D',
-                    borderRadius: '3rem'
-                }}
+                className={"w-[10rem] md:w-[14rem] md:-translate-x-32"}
             />
         </Box>
     </Flex>
