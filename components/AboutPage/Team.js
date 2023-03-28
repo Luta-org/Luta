@@ -11,30 +11,30 @@ const Team = () => {
       modules={[Navigation, Pagination, A11y]}
       pagination={true}
       navigation={{clickable: true}}
-      spaceBetween={50}
+      spaceBetween={0}
       slidesPerView={1}      
       className='h-[70vh] w-[100vw]'
     >
       <SwiperSlide>       
-        <div className='w-full h-[50px] flex justify-center items-center'>
+        <div className='w-full h-[full] flex justify-center '>
           lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv
         </div> 
       </SwiperSlide>
 
       <SwiperSlide>       
-        <div className='w-full h-[50px] flex justify-center items-center'>
+        <div className='w-full h-[full] flex justify-center '>
           lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv
         </div> 
       </SwiperSlide>
 
       <SwiperSlide>       
-        <div className='w-full h-[50px] flex justify-center items-center'>
+        <div className='w-full h-[full] flex justify-center '>
           lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv
         </div> 
       </SwiperSlide>
 
       <SwiperSlide>       
-        <div className='w-full h-[50px] flex justify-center items-center'>
+        <div className='w-full h-[full] flex justify-center '>
           lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv
         </div> 
       </SwiperSlide>
