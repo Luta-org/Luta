@@ -92,8 +92,10 @@ const Navbar = ({
             />
         </Box>
 
-        {click && 
-            <Box className='w-full flex flex-col text-md bg-white absolute left-0 top-16 cursor-pointer md:hidden pb-3 pl-3 z-[1] transition-all duration-300 ease-in'>
+         
+            <Box className={`w-full flex flex-col text-md bg-white absolute left-0 cursor-pointer md:hidden pb-3 pl-3 z-[1] transition-all duration-300 ease-in ${
+            click ? "top-20 " : "top-[-490px]"
+          }`}>
             <Link className='text-black py-4' href={'/'}>
                 Home
             </Link>
@@ -104,7 +106,6 @@ const Navbar = ({
                 FAQs
             </Link>
         </Box>
-        }
     </Box>
   )
 }
