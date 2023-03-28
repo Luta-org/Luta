@@ -6,7 +6,7 @@ import {
 
 const About = () => {
   return (
-    <Center sx={{
+    <Center className="pt-10 md:pt-0" sx={{
         h: '100%',
         display: 'flex',
         justifyContent: 'center',

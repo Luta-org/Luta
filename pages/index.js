@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       
-      <Box>
+      <Box className='transition-all duration-300 ease-in'>
           <Box style={{
           height: '90vh',  
           backgroundColor: '#00072D',
