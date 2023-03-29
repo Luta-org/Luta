@@ -6,21 +6,21 @@ import Image from "next/image";
 const SocialBtn = () => {
   return (
     <div>
-      <div className="flex md:gap-[15px] gap-[10px]">
-        <button className='px-[20px] py-[15px] rounded-full  border border-black bg-white cursor-pointer'  >
-          <div className='flex items-center gap-[5px] md:gap-[10px]'>
+      <div className="flex flex-col justify-center md:flex-row md:gap-[15px] gap-[10px]">
+        <button className="px-[30px] py-[15px] rounded-full w-[280px] md:w-[240px]  border border-black bg-white cursor-pointer">
+          <div className="flex items-center  justify-between  md:gap-[10px]">
             <Image src={google} alt="google" />
-            <p className='md:text-[15px] text-[10px]'>Continue with Google</p>
+            <p className="md:text-[15px] text-[17px] items-center">Continue with Google</p>
           </div>
         </button>
-       <button className='px-[20px] py-[15px] rounded-full  border border-black bg-white cursor-pointer'  >
-         <div className='flex items-center gap-[5px] md:gap-[10px]'>
+        <button className="px-[20px] py-[15px] rounded-full w-[280px] md:w-[240px]  border border-black bg-white cursor-pointer">
+          <div className="flex items-center justify-between md:gap-[10px]">
             <Image src={facebook} alt="facebook" />
-            <p className='md:text-[15px] text-[10px]'>Continue with Facebook</p>
+            <p className="md:text-[15px] text-[17px] items-center">Continue with Facebook</p>
           </div>
         </button>
       </div>
-      </div>
+    </div>
   );
 }
 
