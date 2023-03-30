@@ -1,4 +1,4 @@
-import { Text, Box,  Checkbox,Center } from "@chakra-ui/react";
+import { Text, Box,  Checkbox,Center,Button } from "@chakra-ui/react";
 import React from "react";
 import AuthenticationNavbar from "@/components/AuthenticationNavbar";
 import Link from "next/link";
@@ -82,7 +82,7 @@ const SignUpPage2 = () => {
           </div>
         </div>
 
-        <div className="flex justify-between">
+        <div className="justify-between hidden md:flex">
           <Link style={linkStyle} href="/signup">
             <button className="px-[60px] md:px-[100px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] ">
               Back
@@ -93,6 +93,25 @@ const SignUpPage2 = () => {
               Next
             </button>
           </Link>
+        </div>
+        <div className="block md:hidden">
+          <Center>
+            <Link style={linkStyle} href="/signuppage3">
+              <Button
+                w={"320px"}
+                py={10}
+                color={"black"}
+                borderRadius={"100px"}
+                borderColor={"#1AFFD5"}
+                backgroundColor={"#1AFFD5"}
+                outline={"none"}
+                cursor="pointer"
+                mt="25px"
+              >
+                <Text fontSize={"25px"}>Sign Up</Text>
+              </Button>
+            </Link>
+          </Center>
         </div>
         <Center>
           <div className="flex gap-2  align-center mt-10">

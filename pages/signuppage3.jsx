@@ -59,7 +59,7 @@ const signuppage3 = () => {
 
         <Center className="flex mt-[30px] flex-col">
           <Link style={linkStyle} href="/signuppage4">
-            <button className="px-[60px] py-[10px] rounded-full text-black bg-[#1AFFD5] border border-primary bg-white cursor-pointer mt-[20px] text-[20px] w-[350px] md:w-[470px] lg:w-[400px] ">
+            <button className="px-[60px] py-[10px] rounded-full text-black bg-[#1AFFD5] border border-primary bg-primary cursor-pointer mt-[20px] text-[20px] w-[350px] md:w-[470px] lg:w-[400px] ">
               Validate Profile
             </button>
           </Link>
