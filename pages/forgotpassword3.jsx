@@ -34,7 +34,7 @@ const ForgotpPassword = () => {
             <Image src={leftarrow} alt="leftarrow" />
           </Link>
         </div>
-        <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold">
+        <h1 className="text-[#0E0008] text-[20px] md:text-[48px] text-center font-bold">
           Reset Password
         </h1>
         <div className="md:hidden">
