@@ -14,25 +14,19 @@ const SectionB = () => {
         alignItems: 'center',
         justifyContent: 'space-evenly'
     }}>
-        <Box>
+        <Box className='w-1/2 flex justify-end'>
             <Image
                 src={"/images/iPhone 12 Graphite Pro Top View Mockup label.svg"}
                 alt="phone"
                 width="1"
                 height="4"
-                style={{
-                    height: '75%',
-                    width: '70%',
-                    border: '.6rem solid #00072D',
-                    borderRadius: '3rem'
-                }}
+                className={"w-[10rem] md:w-[14rem] md:-translate-x-[2rem] lg:-translate-x-[10rem]"}            
             />
         </Box>
         
-        <Center>
-            <Text className='text-md md:text-xl' sx={{
+        <Center className='w-1/2'>
+            <Text className='text-md md:text-xl md:w-25px pl-6' sx={{
                 color: '#fff',
-                w: '25rem'
             }}>Relieve the stress of academics with bants on Luta</Text>
         </Center>
     </Flex>

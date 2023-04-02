@@ -13,9 +13,8 @@ import Footer from '@/components/Footer';
 const about = () => {
   return (
     <Box sx={{
-      w: '100vw',
       bgColor: '#fff'
-    }}>
+    }} className='transition-all duration-300 ease-in overflow-x-hidden'>
       <Navbar
         navColor={'#00072d'} 
         color={'transparent'}

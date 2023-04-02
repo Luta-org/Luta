@@ -24,11 +24,13 @@ const Invite = () => {
     }} className="w-full pb-16 pt-4 flex flex-col justify-center items-center">
         <Heading className="text-md md:text-xl text-center font-bold my-4 mx-4">Come join us and be part of something special.</Heading>
         <Text className="mb-4">See you on the inside</Text>
-        <Buttons 
-          text={'Join Us'}  
-          bgColor={'#1affd5'}
-          color={'#00072d'}
-        />
+        <Link href={'/signup'}>
+          <Buttons
+            text={'Join Us'}  
+            bgColor={'#1affd5'}
+            color={'#00072d'}
+          />
+        </Link>
 
         <Box className="mt-6">
           <Heading className="text-xl md:text-2xl text-center font-bold mb-4 mx-4">Follow us</Heading>
