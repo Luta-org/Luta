@@ -6,6 +6,8 @@ import Group from "../public/images/Group.png";
 import checkpoint2 from "../public/images/checkpoint2.png";
 import Image from "next/image";
 import AuthenticationNavbar from "@/components/AuthenticationNavbar";
+import leftarrow from "../public/images/leftarrow.png";
+import rightarrow from "../public/images/rightarrow.png";
 
 const forgotpassword = () => {
   const linkStyle = {
@@ -14,18 +16,28 @@ const forgotpassword = () => {
   return (
     <div>
       <AuthenticationNavbar />
+      <div className="flex justify-between md:justify-center mt-2">
+        <div className="md:hidden">
+          <Link style={linkStyle} href="/forgotpassword">
+            <Image src={leftarrow} alt="leftarrow" />
+          </Link>
+        </div>
+        <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold">
+          Reset Password
+        </h1>
+        <div className="md:hidden">
+          <Image src={rightarrow} alt="leftarrow" />
+        </div>
+      </div>
       <div>
         <div className="flex flex-col text-left pt-5  justify-center lg:px-10 px-5 md:px-0 w-full  md:w-[60%] md:m-auto lg:w-[45%] lg:m-auto ">
           <div>
             <Center>
-              <div>
+              <div className="hiddden md:block">
                 <Image src={Group} alt="GroupLogo" />
               </div>
             </Center>
 
-            <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold">
-              Reset Password
-            </h1>
             <p className=" font-normal text-base md:text-[20px] text-center mt-2 text-[#575757]">
               Enter your OTP
             </p>

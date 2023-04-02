@@ -5,6 +5,9 @@ import line from "../public/images/line.png";
 import Image from "next/image";
 import AuthenticationNavbar from "@/components/AuthenticationNavbar";
 import Profilesuccessful from "@/components/ProfileSuccesful";
+import leftarrow from "../public/images/leftarrow.png";
+import rightarrow from "../public/images/rightarrow.png";
+
 const SignupPage4 = () => {
   const linkStyle = {
     textDecoration: "none",
@@ -17,12 +20,21 @@ const SignupPage4 = () => {
       <Box>
         <AuthenticationNavbar />
       </Box>
-
+      <div className="flex justify-between md:justify-center mt-2">
+        <div className="md:hidden">
+          <Link style={linkStyle} href="/signuppage3">
+            <Image src={leftarrow} alt="leftarrow" />
+          </Link>
+        </div>
+        <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold">
+          Sign Up
+        </h1>
+        <div className="md:hidden">
+          <Image src={rightarrow} alt="leftarrow" />
+        </div>
+      </div>
       <div className="flex flex-col text-left   justify-center lg:px-10 px-5 md:px-0 w-full  md:w-[65%] md:m-auto lg:w-[45%] lg:m-auto ">
         <div>
-          <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold">
-            Sign Up
-          </h1>
           <p className=" font-normal text-[15px] md:text-[18px] text-center  text-[#575757]">
             Complete your registration
           </p>
@@ -93,7 +105,10 @@ const SignupPage4 = () => {
           </Flex>
         </Box>
         <div className="flex mt-[30px] md:gap-[60px] gap-[15px]">
-          <button className="px-[60px] py-[10px] rounded-full text-black border border-primary bg-primary cursor-pointer mt-[20px] text-[20px] w-full "  onClick={() => setShowPopup(true)}>
+          <button
+            className="px-[60px] py-[10px] rounded-full text-black border border-primary bg-primary cursor-pointer mt-[20px] text-[20px] w-full "
+            onClick={() => setShowPopup(true)}
+          >
             Sign Up
           </button>
         </div>

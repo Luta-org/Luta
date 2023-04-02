@@ -4,6 +4,8 @@ import { useState, React } from "react";
 import SocialBtn from "./molecule/SocialBtn";
 import line from "../public/images/line.png";
 import Image from "next/image";
+import leftarrow from "../public/images/leftarrow.png";
+import rightarrow from "../public/images/rightarrow.png";
 
 const SignUpPage1 = () => {
   const linkStyle = {
@@ -11,11 +13,23 @@ const SignUpPage1 = () => {
   };
   return (
     <div>
-      <div className="flex flex-col text-left pt-5  justify-center lg:px-10 px-5 md:px-0 w-full  md:w-[60%] md:m-auto lg:w-[45%] lg:m-auto ">
-        <div>
+      <div>
+        <div className="flex justify-between md:justify-center mt-2">
+          <div className="md:hidden">
+            <Link style={linkStyle} href="/">
+              <Image src={leftarrow} alt="leftarrow" />
+            </Link>
+          </div>
           <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold">
             Sign Up
           </h1>
+          <div className="md:hidden">
+            <Image src={rightarrow} alt="leftarrow" />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col text-left pt-5  justify-center lg:px-10 px-5 md:px-0 w-full  md:w-[60%] md:m-auto lg:w-[45%] lg:m-auto ">
+        <div>
           <p className=" font-normal text-base md:text-[20px] text-center mt-2 text-[#575757]">
             Kindly fill your details to register on Luta
           </p>
@@ -83,11 +97,9 @@ const SignUpPage1 = () => {
         </Center>
         <Center>
           <div className="flex gap-2  align-center mt-10">
-
             <p className="text-[#313232]">Alresdy a member?</p>
             <Link style={linkStyle} href="/login">
               <p className="text-[#0D806B]">Login</p>
-
             </Link>
           </div>
         </Center>
