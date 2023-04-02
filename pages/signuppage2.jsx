@@ -4,6 +4,9 @@ import AuthenticationNavbar from "@/components/AuthenticationNavbar";
 import Link from "next/link";
 import line from "../public/images/line.png";
 import Image from "next/image";
+import leftarrow from "../public/images/leftarrow.png";
+import rightarrow from "../public/images/rightarrow.png";
+
 
 const SignUpPage2 = () => {
   const linkStyle = {
@@ -15,112 +18,127 @@ const SignUpPage2 = () => {
         <AuthenticationNavbar />
       </Box>
 
-      <div className="flex flex-col text-left   justify-center lg:px-10 px-5 md:px-0 w-full  md:w-[65%] md:m-auto lg:w-[45%] lg:m-auto ">
-        <div>
-          <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold">
+      <div>
+        <div className="flex justify-between md:justify-center mt-2">
+          <div className="md:hidden">
+            <Link style={linkStyle} href="/signup">
+              <Image src={leftarrow} alt="leftarrow" />
+            </Link>
+          </div>
+          <h1 className="text-[#0E0008] text-[30px] md:text-[48px] text-center font-bold ">
             Sign Up
           </h1>
+          <div className="md:hidden">
+            <Image src={rightarrow} alt="leftarrow" />
+          </div>
+        </div>
+        <div className="flex flex-col text-left   justify-center lg:px-10 px-5 md:px-0 w-full  md:w-[65%] md:m-auto lg:w-[45%] lg:m-auto ">
           <p className=" font-normal text-[15px] md:text-[18px] text-center  text-[#575757]">
             Fill the registration form to join the community of LUTA students
           </p>
-        </div>
-        <div>
-          <div className="hidden  md:block absolute top-[60px] left-0 ">
-            <Image src={line} alt="line" />
-          </div>
-        </div>
-        <div>
-          <div className="flex flex-col w-full lg:w-full mt-5">
-            <h1 className=" md:text-[20px] text-[15px] font-normal text-[#0E0008]">
-              Name of Institution
-            </h1>
-            <input
-              className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
-              type="text"
-              placeholder="codeboyfriend"
-            />
-          </div>
 
-          <div className="flex flex-col w-full lg:w-full mt-5">
-            <h1 className=" text-base font-normal text-[#0E0008]">Password</h1>
-            <input
-              className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
-              type="text"
-              placeholder="******"
-            />
-            <div className="flex justify-between text-[10px] md:text-[14px]">
-              <Text color={"#00072D"}>Uppercase</Text>
-              <Text color={"#00072D"}>Lowercase</Text>
-              <Text color={"#ADADAD"}>Special character</Text>
-              <Text color={"#00072D"}>Number</Text>
-              <Text color={"#00072D"}>Min 8 characters</Text>
+          <div>
+            <div>
+              <div className="hidden  md:block absolute top-[60px] left-0 ">
+                <Image src={line} alt="line" />
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col w-full lg:w-full mt-8">
-            <h1 className=" md:text-[20px] text-[15px] font-normal text-[#0E0008]">
-              Confirm Password
-            </h1>
-            <input
-              className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
-              type="text"
-              placeholder="******"
-            />
-          </div>
-          <div className="flex items-center gap-[5px] text-left mt-[10px]">
-            <input
-              type="checkbox"
-              id="myCheckbox"
-              name="myCheckbox"
-              value="1"
-            />
-            {/* <label for="myCheckbox">My Checkbox</label> */}
+            <div>
+              <div className="flex flex-col w-full lg:w-full mt-5">
+                <h1 className=" md:text-[20px] text-[15px] font-normal text-[#0E0008]">
+                  Name of Institution
+                </h1>
+                <input
+                  className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
+                  type="text"
+                  placeholder="codeboyfriend"
+                />
+              </div>
 
-            <div className="flex text-[12px] md:text-[15px] gap-[4px]">
-              By signing up, you agree to our
-              <p className="text-primary">terms and conditions. .</p>
+              <div className="flex flex-col w-full lg:w-full mt-5">
+                <h1 className=" text-base font-normal text-[#0E0008]">
+                  Password
+                </h1>
+                <input
+                  className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
+                  type="text"
+                  placeholder="******"
+                />
+                <div className="flex justify-between text-[10px] md:text-[14px]">
+                  <Text color={"#00072D"}>Uppercase</Text>
+                  <Text color={"#00072D"}>Lowercase</Text>
+                  <Text color={"#ADADAD"}>Special character</Text>
+                  <Text color={"#00072D"}>Number</Text>
+                  <Text color={"#00072D"}>Min 8 characters</Text>
+                </div>
+              </div>
+              <div className="flex flex-col w-full lg:w-full mt-8">
+                <h1 className=" md:text-[20px] text-[15px] font-normal text-[#0E0008]">
+                  Confirm Password
+                </h1>
+                <input
+                  className="border border-[#C2C3C8] px-1 py-5 rounded-md mt-2"
+                  type="text"
+                  placeholder="******"
+                />
+              </div>
+              <div className="flex items-center gap-[5px] text-left mt-[10px]">
+                <input
+                  type="checkbox"
+                  id="myCheckbox"
+                  name="myCheckbox"
+                  value="1"
+                />
+                {/* <label for="myCheckbox">My Checkbox</label> */}
+
+                <div className="flex text-[12px] md:text-[15px] gap-[4px]">
+                  By signing up, you agree to our
+                  <p className="text-primary">terms and conditions. .</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <div className="justify-between hidden md:flex">
-          <Link style={linkStyle} href="/signup">
-            <button className="px-[60px] md:px-[100px] py-[10px] rounded-full text-black bg-white border border-secondary bg-white cursor-pointer mt-[20px] text-[20px] ">
-              Back
-            </button>
-          </Link>
-          <Link style={linkStyle} href="/signuppage3">
-            <button className="px-[60px] md:px-[100px] py-[10px] rounded-full text-black  border border-primary  cursor-pointer mt-[20px] text-[20px] bg-primary  ">
-              Next
-            </button>
-          </Link>
-        </div>
-        <div className="block md:hidden">
-          <Center>
-            <Link style={linkStyle} href="/signuppage3">
-              <Button
-                w={"320px"}
-                py={10}
-                color={"black"}
-                borderRadius={"100px"}
-                borderColor={"#1AFFD5"}
-                backgroundColor={"#1AFFD5"}
-                outline={"none"}
-                cursor="pointer"
-                mt="25px"
-              >
-                <Text fontSize={"25px"}>Sign Up</Text>
-              </Button>
-            </Link>
-          </Center>
-        </div>
-        <Center>
-          <div className="flex gap-2  align-center mt-10">
-            <p className="text-[#313232]">Alresdy a member?</p>
-            <Link style={linkStyle} href="/login">
-              <p className="text-[#0D806B]">Login</p>
-            </Link>
+            <div className="justify-between hidden md:flex">
+              <Link style={linkStyle} href="/signup">
+                <button className="px-[60px] md:px-[100px] py-[10px] rounded-full text-black bg-white border border-secondarycursor-pointer mt-[20px] text-[20px] ">
+                  Back
+                </button>
+              </Link>
+              <Link style={linkStyle} href="/signuppage3">
+                <button className="px-[60px] md:px-[100px] py-[10px] rounded-full text-black  border border-primary  cursor-pointer mt-[20px] text-[20px] bg-primary  ">
+                  Next
+                </button>
+              </Link>
+            </div>
+            <div className="block md:hidden">
+              <Center>
+                <Link style={linkStyle} href="/signuppage3">
+                  <Button
+                    w={"320px"}
+                    py={10}
+                    color={"black"}
+                    borderRadius={"100px"}
+                    borderColor={"#1AFFD5"}
+                    backgroundColor={"#1AFFD5"}
+                    outline={"none"}
+                    cursor="pointer"
+                    mt="25px"
+                  >
+                    <Text fontSize={"25px"}>Sign Up</Text>
+                  </Button>
+                </Link>
+              </Center>
+            </div>
+            <Center>
+              <div className="flex gap-2  align-center mt-10">
+                <p className="text-[#313232]">Alresdy a member?</p>
+                <Link style={linkStyle} href="/login">
+                  <p className="text-[#0D806B]">Login</p>
+                </Link>
+              </div>
+            </Center>
           </div>
-        </Center>
+        </div>
       </div>
     </div>
   );
