@@ -23,7 +23,7 @@ module.exports = {
     },
      extend: {
       fontFamily: {
-        poppins: ['Cambay', "sans-serif"]
+        cambay: ['Cambay', "sans-serif"]
       },
       colors : {
         primary: "#1AFFD5",

@@ -1,23 +1,43 @@
-import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, A11y } from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/scrollbar';
+import 'swiper/css/pagination';
 
 const Team = () => {
   return (
     <Swiper
-        modules={[Navigation, Pagination, A11y]}
-      spaceBetween={50}
-      slidesPerView={1}
-      pagination={{ clickable: true }}
-      className='h-[70vh]'
+      modules={[Navigation, Pagination, A11y]}
+      pagination={true}
+      navigation={{clickable: true}}
+      spaceBetween={0}
+      slidesPerView={1}      
+      className='h-[70vh] w-[100vw]'
     >
-      <SwiperSlide className='flex justify-center items-center'> lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv </SwiperSlide>
-      <SwiperSlide> lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv </SwiperSlide>
-      <SwiperSlide> lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv</SwiperSlide>
-      <SwiperSlide> lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv</SwiperSlide>
+      <SwiperSlide>       
+        <div className='w-full h-[full] flex justify-center '>
+          lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv
+        </div> 
+      </SwiperSlide>
+
+      <SwiperSlide>       
+        <div className='w-full h-[full] flex justify-center '>
+          lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv
+        </div> 
+      </SwiperSlide>
+
+      <SwiperSlide>       
+        <div className='w-full h-[full] flex justify-center '>
+          lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv
+        </div> 
+      </SwiperSlide>
+
+      <SwiperSlide>       
+        <div className='w-full h-[full] flex justify-center '>
+          lorem40sncdsjhjdhfvdjfbjcfjvhjdfgvhjxchvjxvbxchjvghcxbvjxcgvhjdxvfghfgvcbvcbjcxnvjkdxv
+        </div> 
+      </SwiperSlide>
     </Swiper>
   )
 }

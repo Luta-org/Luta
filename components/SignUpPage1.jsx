@@ -53,7 +53,7 @@ const SignUpPage1 = () => {
           </div>
 
           <div className="flex flex-col w-full lg:w-full mt-5">
-            <h1 className=" text-base font-normal text-[#0E0008]">
+            <h1 className=" md:text-[20px] text-[15px] font-normal text-[#0E0008]">
               Phone Number
             </h1>
             <input
@@ -98,6 +98,7 @@ const SignUpPage1 = () => {
         <Center>
           <div className="flex gap-2  align-center mt-10">
             <p className="text-[#313232]">Alresdy a member?</p>
+
             <Link style={linkStyle} href="/login">
               <p className="text-[#0D806B]">Login</p>
             </Link>

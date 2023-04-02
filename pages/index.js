@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       
-      <Box>
+      <Box className='transition-all duration-300 ease-in'>
           <Box style={{
           height: '90vh',  
           backgroundColor: '#00072D',
@@ -32,10 +32,9 @@ export default function Home() {
             <SectionA />
           </Box>
         
-        <Box py={'1rem'} style={{
+        <Box py={'1rem'} className='md:mx-[2rem]' style={{
           backgroundColor: '#fff',
-          color: '#00072D',
-          margin: '0 2rem'
+          color: '#00072D'
         }}>
           {/* About */}
           <About />
