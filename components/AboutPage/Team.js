@@ -26,7 +26,7 @@ const Team = () => {
       <SwiperSlide>       
         <div className='flex flex-col justify-center items-center'>
           <div>
-            <Image src={mike} alt="sample" className='rounded-[1000px] h-[100px] w-[100px] md:h-[300px] md:w-[300px]' />
+            <Image src={mike} alt="sample" className='rounded-[1000px] h-[200px] w-[200px] md:h-[300px] md:w-[300px]' />
           </div>
           <h1 className='mt-10 text-[32px]'>Oladimeji Micheal</h1>
           <p className='text-[24px]'>Frontend Developer</p>
@@ -36,7 +36,7 @@ const Team = () => {
       <SwiperSlide>       
         <div className='flex flex-col justify-center items-center'>
           <div>
-            <Image src={jane} alt="sample" className='rounded-[1000px]  h-[100px] w-[100px] md:h-[300px] md:w-[300px]' />
+            <Image src={jane} alt="sample" className='rounded-[1000px] h-[200px] w-[200px] md:h-[300px] md:w-[300px]' />
           </div>
           <h1 className='mt-10 text-[32px]'>Ayogu Janefrances</h1>
           <p className='text-[24px]'>Design Lead</p>
@@ -46,7 +46,7 @@ const Team = () => {
       <SwiperSlide>       
         <div className='flex flex-col justify-center items-center'>
           <div>
-            <Image src={akin} alt="sample" className='rounded-[1000px]  h-[100px] w-[100px] md:h-[300px] md:w-[300px]' />
+            <Image src={akin} alt="sample" className='rounded-[1000px] h-[200px] w-[200px] md:h-[300px] md:w-[300px]' />
           </div>
           <h1 className='mt-10 text-[32px]'>Oyewole Akinkunmi</h1>
           <p className='text-[24px]'>Frontend developer</p>
@@ -56,7 +56,7 @@ const Team = () => {
       <SwiperSlide>       
         <div className='flex flex-col justify-center items-center'>
           <div>
-            <Image src={femi} alt="sample" className='rounded-[1000px]  h-[100px] w-[100px] md:h-[300px] md:w-[300px]' />
+            <Image src={femi} alt="sample" className='rounded-[1000px]  h-[200px] w-[200px] md:h-[300px] md:w-[300px]' />
           </div>
           <h1 className='mt-10 text-[32px]'>Femi-Fadiya Segun</h1>
           <p className='text-[24px]'>Product Designer</p>
@@ -65,7 +65,7 @@ const Team = () => {
        <SwiperSlide>       
         <div className='flex flex-col justify-center items-center'>
           <div>
-            <Image src={tofunmi} alt="sample" className='rounded-[1000px]  h-[100px] w-[100px] md:h-[300px] md:w-[300px]' />
+            <Image src={tofunmi} alt="sample" className='rounded-[1000px]  h-[200px] w-[200px] md:h-[300px] md:w-[300px]' />
           </div>
           <h1 className='mt-10 text-[32px]'>Olayiwola Jesutofunmi</h1>
           <p className='text-[24px]'>Frontend developer</p>
@@ -74,7 +74,7 @@ const Team = () => {
       <SwiperSlide>       
         <div className='flex flex-col justify-center items-center'>
           <div>
-            <Image src={erik} alt="sample" className='rounded-[1000px]  h-[100px] w-[100px] md:h-[300px] md:w-[300px]' />
+            <Image src={erik} alt="sample" className='rounded-[1000px]  h-[200px] w-[200px] md:h-[300px] md:w-[300px]' />
           </div>
           <h1 className='mt-10 text-[32px]'>Eric Obulo</h1>
           <p className='text-[24px]'>Product Designer</p>
