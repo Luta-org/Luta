@@ -24,7 +24,7 @@ const Team = () => {
       className='h-[70vh] w-[100vw]'
     >
       <SwiperSlide>       
-        <div className='mt-10 flex flex-col justify-center items-center'>
+        <div className='mt-[100px] md:mt-10 flex flex-col justify-center items-center'>
           <div>
             <Image src={mike} alt="sample" className='rounded-[1000px] h-[150px] w-[150px] md:h-[300px] md:w-[300px]' />
           </div>
@@ -34,7 +34,7 @@ const Team = () => {
       </SwiperSlide>
 
       <SwiperSlide>       
-        <div className='mt-10 flex flex-col justify-center items-center'>
+        <div className='mt-[100px] flex flex-col justify-center items-center'>
           <div>
             <Image src={jane} alt="sample" className='rounded-[1000px] h-[150px] w-[150px] md:h-[300px] md:w-[300px]' />
           </div>
@@ -44,7 +44,7 @@ const Team = () => {
       </SwiperSlide>
 
       <SwiperSlide>       
-        <div className='mt-10 flex flex-col justify-center items-center'>
+        <div className='mt-[100px] flex flex-col justify-center items-center'>
           <div>
             <Image src={akin} alt="sample" className='rounded-[1000px] h-[150px] w-[150px] md:h-[300px] md:w-[300px]' />
           </div>
@@ -54,7 +54,7 @@ const Team = () => {
       </SwiperSlide>
 
       <SwiperSlide>       
-        <div className='mt-10 flex flex-col justify-center items-center'>
+        <div className='mt-[100px] flex flex-col justify-center items-center'>
           <div>
             <Image src={femi} alt="sample" className='rounded-[1000px]  h-[150px] w-[150px] md:h-[300px] md:w-[300px]' />
           </div>
@@ -63,7 +63,7 @@ const Team = () => {
         </div> 
       </SwiperSlide>
        <SwiperSlide>       
-        <div className='mt-10 flex flex-col justify-center items-center'>
+        <div className='mt-[100px] flex flex-col justify-center items-center'>
           <div>
             <Image src={tofunmi} alt="sample" className='rounded-[1000px]  h-[150px] w-[150px] md:h-[300px] md:w-[300px]' />
           </div>
@@ -72,7 +72,7 @@ const Team = () => {
         </div> 
       </SwiperSlide>
       <SwiperSlide>       
-        <div className='mt-10 flex flex-col justify-center items-center'>
+        <div className='mt-[100px] flex flex-col justify-center items-center'>
           <div>
             <Image src={erik} alt="sample" className='rounded-[1000px]  h-[150px] w-[150px] md:h-[300px] md:w-[300px]' />
           </div>
