@@ -74,7 +74,7 @@ const Team = () => {
       <SwiperSlide>       
         <div className='flex flex-col justify-center items-center'>
           <div>
-            <Image src={erik} alt="sample" className='rounded-[1000px]  h-[100px] w-[200px] md:h-[300px] md:w-[300px]' />
+            <Image src={erik} alt="sample" className='rounded-[1000px]  h-[200px] w-[200px] md:h-[300px] md:w-[300px]' />
           </div>
           <h1 className='mt-10 text-[32px]'>Eric Obulo</h1>
           <p className='text-[24px]'>Product Designer</p>
