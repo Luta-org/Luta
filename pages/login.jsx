@@ -60,6 +60,7 @@ const login = () => {
             </div>
           </div>
           <Center>
+            <Link style={linkStyle} href="/homepage">
             <Button
               w={"320px"}
               py={10}
@@ -73,6 +74,8 @@ const login = () => {
             >
               <Text fontSize={"25px"}>Login</Text>
             </Button>
+              </Link>
+
           </Center>
           <Center>
             <Link style={linkStyle} href="/forgotpassword">
